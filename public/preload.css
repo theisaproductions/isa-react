@@ -1,0 +1,49 @@
+/* poppins-200 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-200.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-300 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-300.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-regular - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-regular.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-500.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-600.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-700.woff2'); /* Super Modern Browsers */
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/poppins/poppins-v20-latin-800.woff2'); /* Super Modern Browsers */
+  }

@@ -1,23 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, useLayoutEffect } from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
+
+// pages
+const Landing = lazy(() => import('./landing/landing'));
+const HomePage = lazy(() => import('./landing/homepage/homepage'));
+const AboutPage = lazy(() => import('./landing/subpages/pages/aboutPage'));
+const ActingPage = lazy(() => import('./landing/subpages/pages/actingPage'));
+const AnimationsPage = lazy(() => import('./landing/subpages/pages/animationsPage'));
+const ArtPage = lazy(() => import('./landing/subpages/pages/artPage'));
+const CorporatePage = lazy(() => import('./landing/subpages/pages/corporatePage'));
+const DancePage = lazy(() => import('./landing/subpages/pages/dancePage'));
+const FilmmakingPage = lazy(() => import('./landing/subpages/pages/filmmakingPage'));
+const FitnessPage = lazy(() => import('./landing/subpages/pages/fitnessPage'));
+const MarketingPage = lazy(() => import('./landing/subpages/pages/marketingPage'));
+const MotivationPage = lazy(() => import('./landing/subpages/pages/motivationPage'));
+const MusicPage = lazy(() => import('./landing/subpages/pages/musicPage'));
+const PhotographyPage = lazy(() => import('./landing/subpages/pages/photographyPage'));
+const ProductionPage = lazy(() => import('./landing/subpages/pages/productionsPage'));
+const RoutesvillePage = lazy(() => import('./landing/subpages/pages/routesvillePage'));
+const SchoolPage = lazy(() => import('./landing/subpages/pages/schoolPage'));
+const TalentPage = lazy(() => import('./landing/subpages/pages/talentPage'));
+
+// application pages
+const ApplyPage = lazy(() => import('./landing/subpages/pages/applyPage/applicationPage'));
+const ActingApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/actingApplicationPage'));
+const AnimationApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/animationApplicationPage'));
+const FilmmakingApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/filmmakingApplicationPage'));
+
+const Wrapper = ({children}) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+} 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      <Wrapper>
+        <Routes>
+            <Route path="/" element={<Landing />}>
+              <Route index element={<HomePage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="acting" element={<ActingPage />} />
+              <Route path="filmmaking" element={<FilmmakingPage />} />
+              <Route path="animations" element={<AnimationsPage />} />
+              <Route path="photography" element={<PhotographyPage />} />
+              <Route path="fitness" element={<FitnessPage />} />
+              <Route path="dance" element={<DancePage />} />
+              <Route path="music" element={<MusicPage />} />
+              <Route path="marketing" element={<MarketingPage />} />
+              <Route path="art" element={<ArtPage />} />
+              <Route path="motivation" element={<MotivationPage />} />
+              <Route path="school" element={<SchoolPage />} />
+              <Route path="corporate" element={<CorporatePage />} />
+              <Route path="productions" element={<ProductionPage />} />
+              <Route path="talent-management" element={<TalentPage />} />
+              <Route path="routesville" element={<RoutesvillePage />} />
+              <Route path="apply" element={<ApplyPage />}>
+                <Route path="acting" element={<ActingApplication />}></Route>
+                <Route path="animation" element={<AnimationApplication />}></Route>
+                <Route path="filmmaking" element={<FilmmakingApplication />}></Route>
+              </Route>
+            </Route>
+        </Routes>
+      </Wrapper>
     </div>
   );
 }

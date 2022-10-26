@@ -1,0 +1,27 @@
+.heading1 {
+    @apply text-4xl md:text-6xl font-bold
+}
+.heading2 {
+    @apply text-2xl md:text-4xl font-bold
+}
+.subheading {
+    @apply text-xl md:text-2xl font-bold
+}
+.paragraph {
+    @apply text-sm md:text-lg
+}
+.quote {
+    @apply text-2xl md:text-4xl drop-shadow-dark1
+}
+
+.applyButton {
+    @apply px-8 py-3 border border-black rounded-full font-bold text-sm md:text-base lg:text-xl
+}
+
+.tabs {
+    @apply border border-gray-300 px-4 py-2 text-center hover:bg-black hover:text-white duration-300 cursor-default text-sm md:text-base
+}
+
+.terms {
+    @apply pl-4 border-l-2 border-black
+}
