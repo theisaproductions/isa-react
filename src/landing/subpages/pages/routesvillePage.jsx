@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const RoutesvillePage = () => {
+
+    useDocumentTitle('Routesville');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='routesville.mp4' />
@@ -12,7 +16,7 @@ const RoutesvillePage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>Routesville</h1>
-                    <p class="subheading">“A place where artists and connoisseurs, meet ponder, train and experiment.”</p>
+                    <p className="subheading">“A place where artists and connoisseurs, meet ponder, train and experiment.”</p>
                     <p className='paragraph'>ISA brings to you Routesville, the coolest collaborative art space in town.</p>
                 </div>
 

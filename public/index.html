@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Courses in acting, filmmaking, animation, dance, music and many more."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -27,9 +27,12 @@
     <!-- this is important, without this fonts wont work on child routes -->
     <base href="/">
     <!-- preload fonts -->
+    <link rel="preload" href="./assets/fonts/poppins/poppins-v20-latin-200.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/poppins/poppins-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/poppins/poppins-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./preload.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
 
-    <title>React App</title>
+    <title>Indian School Of Acting</title>
 
     <style type="text/css">
       body, html {
@@ -85,11 +88,10 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-        <!-- loading layout auto replaced by app after startupp by angular -->
-        <div class="app-loading">
-          <div class="logo"></div>
-          <svg class="spinner" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+        <!-- loading layout auto replaced by app after startup by react -->
+        <div className="app-loading">
+          <svg className="spinner" viewBox="25 25 50 50">
+            <circle className="path" cx="50" cy="50" r="20" fill="none" strokeWidth="2" strokeMiterlimit="10"/>
           </svg>
         </div>
     </div>

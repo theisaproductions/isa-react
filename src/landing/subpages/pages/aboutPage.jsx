@@ -1,8 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 
 const AboutPage = () => {
+
+    // set page title for seo
+    useDocumentTitle('About ISA');
+
     return(
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='about.mp4' />

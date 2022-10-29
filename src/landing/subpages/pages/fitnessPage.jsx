@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const FitnessPage = () => {
+
+    useDocumentTitle('ISA Fitness');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='fitness.mp4' />

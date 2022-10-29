@@ -122,9 +122,9 @@ const Navbar = () => {
 
     return (
         <nav className='select-none'>
-            <div className='pt-6 md:pt-8 pb-2 fixed top-0 left-0 right-0 z-40 px-4 opacity-1 md:px-5vw flex items-center justify-between animate-fadeInLong'>
+            <div className='pt-6 md:pt-8 pb-2 fixed top-0 left-0 right-0 z-40 opacity-1 px-5vw flex items-center justify-between animate-fadeInLong'>
                 <Link onClick={() => {setMenuState(false)}} to={'/'} className="drop-shadow-dark1 z-100">
-                    <img className='h-12 md:h-16' src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="Logo"/>
+                    <img className='h-12 sm:h-16' src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="Logo"/>
                 </Link>
                 <MenuButton onChange={setMenuState} state={menuState}/>
                 {menuState && <Menu state={menuState} setState={(e) => setMenuState(e)}/>}

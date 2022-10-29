@@ -6,22 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter
 } from "react-router-dom";
-import Spinner from './landing/components/spinner';
+
+import { PrismicProvider } from '@prismicio/react'
+import { client } from './landing/prismic';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Suspense fallback={
       <div className='h-screen w-screen bg-black flex flex-col items-center justify-center'>
-          <div class="app-loading">
-            <div class="logo"></div>
-            <svg class="spinner" viewBox="25 25 50 50">
-              <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+          <div className="app-loading">
+            <svg className="spinner" viewBox="25 25 50 50">
+              <circle className="path" cx="50" cy="50" r="20" fill="none" strokeWidth="2" strokeMiterlimit="10"/>
             </svg>
           </div>
       </div>
     }>
-      <App />
+      <PrismicProvider client={client}>
+        <App />
+      </PrismicProvider>
     </Suspense>
   </BrowserRouter>
 );

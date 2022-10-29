@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const AnimationsPage = () => {
+
+    // set page title for seo
+    useDocumentTitle('Indian School of Animations');
+
     return(
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='animation.mp4' />
@@ -51,7 +56,7 @@ const AnimationsPage = () => {
                     </div>
                 </div>
 
-                <h3 class="quote text-center">“Well, luckily with animation, fantasy is your friend.”</h3>
+                <h3 className="quote text-center">“Well, luckily with animation, fantasy is your friend.”</h3>
 
                 <h2 className='heading1'>Courses</h2>
 
@@ -394,8 +399,8 @@ const AnimationsPage = () => {
                         elevated metro station located on the branch line of the Blue Line of the Delhi Metro. So it is in the very close
                         proximity of Delhi. ISA school of animation is located at a walkable distance of less than 2km from the metro station.
                     </p>
-                    <h3 class="subheading">Student Housing Options</h3>
-                    <p class="paragraph">Outstation students can choose between various accommodation preferences including Paying
+                    <h3 className="subheading">Student Housing Options</h3>
+                    <p className="paragraph">Outstation students can choose between various accommodation preferences including Paying
                         Guest, Hotels,
                         Service Apartments and Rentals facilities. Expenses for accommodation in NCR starts from Rs 4,000 per month
                         for hostel facilities, PG facilities and onwards depending on the preferred type of accommodation and location.

@@ -1,9 +1,14 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const CorporatePage = () => {
+
+    // set page title for seo
+    useDocumentTitle('Corporate Collaborations');
+
     return (
         <div className=''>
             <TopMediaComponent type="image" mediaUrl='corporate.jpg' />
@@ -12,7 +17,7 @@ const CorporatePage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>Collaborations</h1>
-                    <p class="subheading">Enhance your company culture, efficiency and productivity.</p>
+                    <p className="subheading">Enhance your company culture, efficiency and productivity.</p>
                 </div>
 
                 {/* Overview section */}

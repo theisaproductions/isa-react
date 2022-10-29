@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const FilmmakingPage = () => {
+
+    // set page title for seo
+    useDocumentTitle('ISA Film School');
+
     return(
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='filmmaking.mp4' />
@@ -427,8 +432,8 @@ const FilmmakingPage = () => {
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/filmmaking/44.jpg`} alt=""/>
                     <h2 className='heading2'>Online Courses</h2>
                     <div className='space-y-2'>
-                        <h3 class="subheading">4-Week Online Film Directing</h3>
-                        <p class="paragraph">This workshop focuses on how a filmmaker writes, prepares for and directs a short film
+                        <h3 className="subheading">4-Week Online Film Directing</h3>
+                        <p className="paragraph">This workshop focuses on how a filmmaker writes, prepares for and directs a short film
                             while focusing on the
                             fact that good storytelling is never about the technology but rather the story and the acting.
                             Through a series of online lectures and guided exercises this workshop will cover the tools available to help
@@ -436,8 +441,8 @@ const FilmmakingPage = () => {
                         </p>
                     </div>
                     <div className='space-y-2'>
-                        <h3 class="subheading">4-Week Online Cinematography</h3>
-                        <p class="paragraph">
+                        <h3 className="subheading">4-Week Online Cinematography</h3>
+                        <p className="paragraph">
                             This workshop is focused on understanding the basic principles of cinematography with a combination of
                             online lectures, analysis of the history of cinematography, camera and basic lighting technology and
                             techniques,
@@ -445,8 +450,8 @@ const FilmmakingPage = () => {
                         </p>
                     </div>
                     <div className='space-y-2'>
-                        <h3 class="subheading">4-Week Online Digital Editing with Adobe Premiere Pro</h3>
-                        <p class="paragraph">
+                        <h3 className="subheading">4-Week Online Digital Editing with Adobe Premiere Pro</h3>
+                        <p className="paragraph">
                             This Online Digital Editing workshop is designed to serve the needs of students from a wide array of
                             professional, personal and educational backgrounds. For students contemplating a longer-term education
                             in editing or a career in the industry, it is an excellent introduction to the field. Students will edit
@@ -455,8 +460,8 @@ const FilmmakingPage = () => {
                         </p>
                     </div>
                     <div className='space-y-2'>
-                        <h3 class="subheading">15-Week Online ScriptWriting Workshop</h3>
-                        <p class="paragraph">
+                        <h3 className="subheading">15-Week Online ScriptWriting Workshop</h3>
+                        <p className="paragraph">
                             Our 15-Week Online Screenwriting workshops offer instruction in specific areas of screenwriting, whether it
                             is feature-length film scripts, television or comic book writing. Each of the workshops is structured to
                             deliver

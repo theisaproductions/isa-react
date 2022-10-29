@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const MusicPage = () => {
+
+    useDocumentTitle('ISA Music School');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='music.mp4' />
@@ -12,8 +16,8 @@ const MusicPage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>ISA Music School</h1>
-                    <h2 class="quote">“Music is the literature of the heart; it commences where speech ends.”</h2>
-                    <p class="quote">“Without music, life would be a mistake”</p>
+                    <h2 className="quote">“Music is the literature of the heart; it commences where speech ends.”</h2>
+                    <p className="quote">“Without music, life would be a mistake”</p>
                 </div>
 
                 {/* just left text */}

@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const ArtPage = () => {
+
+    // set page title for seo
+    useDocumentTitle('ISA School of Art');
 
     const artWorks = [
         {id: 1, url: '', price: '30,000'},
@@ -59,8 +63,8 @@ const ArtPage = () => {
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='quote'>“It is through art, and through art only, that we can realise our perfection”</h1>
                     <h1 className='heading1'>ISA School of Art</h1>
-                    <h2 class="subheading">“Every human being is an artist”</h2>
-                    <p class="paragraph">
+                    <h2 className="subheading">“Every human being is an artist”</h2>
+                    <p className="paragraph">
                         The ultimate aim of ISA Art Class is to inspire students
                         to realise their full creative potential and make them
                         into artists.

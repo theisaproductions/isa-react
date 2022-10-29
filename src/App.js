@@ -1,5 +1,9 @@
 import React, { lazy, useLayoutEffect } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
+import NotFoundPage from './landing/components/notFoundPage';
+import BlogsRoot from './landing/subpages/pages/blogs/blogsRoot';
+import AllBlogsPage from './landing/subpages/pages/blogs/pages/allBlogsPage';
+import BlogPage from './landing/subpages/pages/blogs/pages/blogPage';
 
 // pages
 const Landing = lazy(() => import('./landing/landing'));
@@ -27,6 +31,7 @@ const ActingApplication = lazy(() => import('./landing/subpages/pages/applyPage/
 const AnimationApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/animationApplicationPage'));
 const FilmmakingApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/filmmakingApplicationPage'));
 
+// Scroll to top wrapper
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -41,6 +46,7 @@ function App() {
       <Wrapper>
         <Routes>
             <Route path="/" element={<Landing />}>
+              <Route path='*' element={<NotFoundPage />} />
               <Route index element={<HomePage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="acting" element={<ActingPage />} />
@@ -62,6 +68,10 @@ function App() {
                 <Route path="acting" element={<ActingApplication />}></Route>
                 <Route path="animation" element={<AnimationApplication />}></Route>
                 <Route path="filmmaking" element={<FilmmakingApplication />}></Route>
+              </Route>
+              <Route path="blogs" element={<BlogsRoot />} >
+                  <Route index element={<AllBlogsPage />}/>
+                  <Route path=":id" element={<BlogPage />}/>
               </Route>
             </Route>
         </Routes>

@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const MotivationPage = () => {
+
+    useDocumentTitle('ISA Motivation');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='motivation.mp4' />
@@ -14,8 +18,8 @@ const MotivationPage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>ISA Motivation</h1>
-                    <h2 class="subheading">“Get all of the support you need to help improve your mental health.”</h2>
-                    <p class="paragraph">ISA offers high quality courses for professional development and continued learning.</p>
+                    <h2 className="subheading">“Get all of the support you need to help improve your mental health.”</h2>
+                    <p className="paragraph">ISA offers high quality courses for professional development and continued learning.</p>
                 </div>
 
                 {/* Overview section */}

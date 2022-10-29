@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../../../components/documentTitle';
 import '../../common.css'
 
 const ActingApplication = () => {
+
+    useDocumentTitle('ISA - Application Form for Acting');
 
     const handleDownload = () => {
         fetch(`${process.env.PUBLIC_URL}/assets/files/ISA_Fee_Structure.pdf`).then(response => {
@@ -22,7 +25,7 @@ const ActingApplication = () => {
 
                 {/* top section */}
                 <div className='flex flex-col gap-6 items-center justify-center'>
-                    <h1 class="text-5xl md:text-6xl font-black text-center drop-shadow-dark2 mb-6">Application Form</h1>
+                    <h1 className="text-5xl md:text-6xl font-black text-center drop-shadow-dark2 mb-6">Application Form</h1>
                     <a target="_blank" href="https://forms.gle/D1tyCYRmiR1R4JP4A" className="bg-black/90 px-10 py-6 subheading text-green-400 hover:drop-shadow-dark1 duration-300">Click here to apply</a>
                     <h3 onClick={handleDownload} className='text-base cursor-pointer hover:text-pink-700 duration-300'>Download Fee Structure</h3>
                 </div>
@@ -57,12 +60,12 @@ const ActingApplication = () => {
                     <h1 className='text-4xl md:text-5xl font-black'>Fee Structure</h1>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Diploma in Foundational Course In Acting: Six months</h3>
-                        <h4 class="font-bold">Total Course fee: INR 55,000</h4>
+                        <h3 className="heading2">Diploma in Foundational Course In Acting: Six months</h3>
+                        <h4 className="font-bold">Total Course fee: INR 55,000</h4>
                         <p>The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
                         </p>
-                        <h4 class="font-bold">Installment Options:</h4>
+                        <h4 className="font-bold">Installment Options:</h4>
                         <p>
                             <strong>Two Installments:</strong> <br/> Total Fees: INR 65,000 <br/>
                             INR 32,500 before joining and INR 32,500 after 2 months of course completion.
@@ -75,8 +78,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Full Fledged Actor: 1 Year Diploma in Intensive Acting</h3>
-                        <h4 class="font-bold">Total Course fee: INR 90,000</h4>
+                        <h3 className="heading2">Full Fledged Actor: 1 Year Diploma in Intensive Acting</h3>
+                        <h4 className="font-bold">Total Course fee: INR 90,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -94,8 +97,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Full Metal Jacket: 2 years Advance Diploma In Professional Acting</h3>
-                        <h4 class="font-bold">Total Course fee: INR 1,60,000</h4>
+                        <h3 className="heading2">Full Metal Jacket: 2 years Advance Diploma In Professional Acting</h3>
+                        <h4 className="font-bold">Total Course fee: INR 1,60,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -113,8 +116,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Acting Workshop in Screen Acting: 3 months</h3>
-                        <h4 class="font-bold">Total Course fee: INR 36,000</h4>
+                        <h3 className="heading2">Acting Workshop in Screen Acting: 3 months</h3>
+                        <h4 className="font-bold">Total Course fee: INR 36,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -132,8 +135,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Diploma in 1 year Part Time: Weekend Professional Acting Course</h3>
-                        <h4 class="font-bold">Total Course fee: INR 75,000</h4>
+                        <h3 className="heading2">Diploma in 1 year Part Time: Weekend Professional Acting Course</h3>
+                        <h4 className="font-bold">Total Course fee: INR 75,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -151,8 +154,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Weekend Foundational Course In Acting: Six months</h3>
-                        <h4 class="font-bold">Total Course fee: INR 45,000</h4>
+                        <h3 className="heading2">Weekend Foundational Course In Acting: Six months</h3>
+                        <h4 className="font-bold">Total Course fee: INR 45,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -170,8 +173,8 @@ const ActingApplication = () => {
                     </div>
 
                     <div className='space-y-4'>
-                        <h3 class="heading2">Acting Workshop in Screen Acting: 3 months</h3>
-                        <h4 class="font-bold">Total Course fee: INR 30,000</h4>
+                        <h3 className="heading2">Acting Workshop in Screen Acting: 3 months</h3>
+                        <h4 className="font-bold">Total Course fee: INR 30,000</h4>
                         <p>
                             The whole fees to be submitted before the commencement of the classes. However, a student can choose
                             to pay the fees in installment with the following options where the fee increases with installments.
@@ -226,10 +229,10 @@ const ActingApplication = () => {
                 </div>
 
                 {/* Help section */}
-                <div class="space-y-4">
-                    <h3 class="subheading">Need Help?</h3>
+                <div className="space-y-4">
+                    <h3 className="subheading">Need Help?</h3>
                     <p>
-                        Contact our support center - <Link to={'/?page=19'} class="text-blue-600 font-semibold">Click here</Link>
+                        Contact our support center - <Link to={'/?page=19'} className="text-blue-600 font-semibold">Click here</Link>
                     </p>
                 </div>
 

@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const MarketingPage = () => {
+
+    useDocumentTitle('ISA School of Marketing');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='marketing.mp4' />
@@ -13,8 +17,8 @@ const MarketingPage = () => {
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>ISA School of Marketing</h1>
                     <p className='paragraph font-bold'>Digital Marketing <br/> Branding <br/> Web Designing</p>
-                    <h2 class="quote">“The best marketing doesn’t feel like marketing.”</h2>
-                    <p class="paragraph">
+                    <h2 className="quote">“The best marketing doesn’t feel like marketing.”</h2>
+                    <p className="paragraph">
                         ISA Marketing courses gives you comprehensive
                         knowledge on most important digital marketing domains.
                     </p>
@@ -44,7 +48,7 @@ const MarketingPage = () => {
                 <div className='flex flex-col gap-6'>
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/1.jpg`} alt=""/>
                     <h2 className='heading2'>Digital Marketing Training Program</h2>
-                    <p class="paragraph font-bold">Classroom Training - 3 Months <br/> Online Classes - 4 or 7 months</p>
+                    <p className="paragraph font-bold">Classroom Training - 3 Months <br/> Online Classes - 4 or 7 months</p>
                     <p className="paragraph">
                         You will learn various techniques of digital marketing through a series of various modules. The number of
                         modules in this digital marketing course for each domain will vary based on the importance and effectiveness

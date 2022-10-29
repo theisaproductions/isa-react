@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const ProductionPage = () => {
+
+    useDocumentTitle('ISA Productions');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='production.mp4' />
@@ -12,8 +16,8 @@ const ProductionPage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>ISA Productions</h1>
-                    <h2 class="subheading">“Visionaries. Creatives. Story tellers.”</h2>
-                    <p class="paragraph">
+                    <h2 className="subheading">“Visionaries. Creatives. Story tellers.”</h2>
+                    <p className="paragraph">
                         We collaborate with brands and agencies to create memorable experiences. And we make films.
                     </p>
                 </div>

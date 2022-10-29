@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const PhotographyPage = () => {
+
+    useDocumentTitle('ISA School of Photography and Fashion');
+
     return (
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='photography.mp4' />
@@ -342,7 +345,7 @@ const PhotographyPage = () => {
                         Wedding Photography Workshop
                         <br/> Certificate courses
                     </p>
-                    <h3 class="quote">“Capture souls, not just smiles.”</h3>
+                    <h3 className="quote">“Capture souls, not just smiles.”</h3>
                     <p className='paragraph'>
                         This workshop will help you to prepare for the most challenging real life event there is by simulating realistic
                         photographic situations as well as interesting and dynamic theory discussions. You will come away with an
@@ -404,19 +407,19 @@ const PhotographyPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="flex flex-col gap-4 border-t-8 border-gray-300 pt-4">
                             <h2 className="heading2">Photoshop</h2>
-                            <p class="paragraph font-semibold">
+                            <p className="paragraph font-semibold">
                                 Certificate course <br/> Duration: 2 months
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 border-t-8 border-gray-300 pt-4">
                             <h2 className="heading2">Editing Pro: Photoshop + Premiere</h2>
-                            <p class="paragraph font-semibold">
+                            <p className="paragraph font-semibold">
                                 Certificate course <br/> Duration: 1 months
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 border-t-8 border-gray-300 pt-4">
                             <h2 className="heading2">Editing Premiere</h2>
-                            <p class="paragraph font-semibold">
+                            <p className="paragraph font-semibold">
                                 Certificate course <br/> Duration: 1 months
                             </p>
                         </div>

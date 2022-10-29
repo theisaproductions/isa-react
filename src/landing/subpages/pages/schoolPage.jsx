@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const SchoolPage = () => {
+
+    useDocumentTitle('School Collaborations');
+
     return (
         <div className=''>
             <TopMediaComponent type="image" mediaUrl='schools.jpg' />
@@ -12,7 +16,7 @@ const SchoolPage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>Collaborations</h1>
-                    <p class="subheading">To create purposeful opportunities that work for your students, staff and management.</p>
+                    <p className="subheading">To create purposeful opportunities that work for your students, staff and management.</p>
                 </div>
 
                 {/* Overview section */}

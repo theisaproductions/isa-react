@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const ActingPage = () => {
+
+    // set page title for seo
+    useDocumentTitle('Indian School of Acting');
+
     return(
         <div className=''>
             <TopMediaComponent type="video" mediaUrl='acting.mp4' />

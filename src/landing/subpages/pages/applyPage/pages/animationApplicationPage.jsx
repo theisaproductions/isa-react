@@ -1,14 +1,18 @@
 import React from 'react';
+import useDocumentTitle from '../../../../components/documentTitle';
 import '../../common.css'
 
 const AnimationApplication = () => {
+
+    useDocumentTitle('ISA - Application Form for Animation');
+
     return(
         <div className=''>
             <div className='max-w-5xl mx-auto px-4 pt-28 pb-14 flex flex-col gap-14 md:gap-20 min-h-screen'>
                 
                 {/* top section */}
                 <div className='flex flex-col gap-6 items-center justify-center'>
-                    <h1 class="text-5xl md:text-6xl font-black text-center drop-shadow-dark2 mb-6">Application Form</h1>
+                    <h1 className="text-5xl md:text-6xl font-black text-center drop-shadow-dark2 mb-6">Application Form</h1>
                     <a target="_blank" href="https://forms.gle/itKdXNdE7NNAkvsD6" className="bg-black/90 px-10 py-6 subheading text-green-400 hover:drop-shadow-dark1 duration-300">Click here to apply</a>
                 </div>
 

@@ -1,9 +1,13 @@
 import React from 'react';
+import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const TalentPage = () => {
+
+    useDocumentTitle('ISA Talent');
+
     return (
         <div className=''>
             <TopMediaComponent type="image" mediaUrl='talent.jpg' />
@@ -12,7 +16,7 @@ const TalentPage = () => {
                 {/* just center text */}
                 <div className='text-center flex flex-col gap-10'>
                     <h1 className='heading1'>ISA Talents</h1>
-                    <p class="subheading">“Show us your talent. We'll make it shine.”</p>
+                    <p className="subheading">“Show us your talent. We'll make it shine.”</p>
                     <p className='paragraph'>
                         We collaborate with brands, agencies,
                         casting agents, filmmakers and artists
