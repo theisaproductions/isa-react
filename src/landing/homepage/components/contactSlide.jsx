@@ -27,7 +27,6 @@ const ContactSlide = ({current, index}) => {
 
     const handleSubmit = (value, reset) => {
         setSubmitting(true);
-        console.log(value);
         axios.post(api, value).then(res => {
             setSubmitting(false);
             reset();

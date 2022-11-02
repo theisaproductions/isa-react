@@ -5,9 +5,9 @@ const BlogSubNavbar = ({showNav = false}) => {
 
     const items = [
         {name: 'Acting Courses', link: '/acting'},
-        {name: 'Animation Courses', link: '/animation'},
-        {name: 'Filmmaking Courses', link: '/filmmakin'},
-        {name: 'Photography Courses', link: '/photograph'},
+        {name: 'Animation Courses', link: '/animations'},
+        {name: 'Filmmaking Courses', link: '/filmmaking'},
+        {name: 'Photography Courses', link: '/photography'},
         {name: 'Dance Courses', link: '/dance'},
         {name: 'Music Courses', link: '/music'},
         {name: 'Art Courses', link: '/art'},

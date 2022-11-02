@@ -1,21 +1,11 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ContactSlide from './contactSlide';
 
 
 const Slide = ({data, goToSlide, current, index}) => {
 
-    const navigate = useNavigate();
-
     const cdnURL = "https://cdn.isafilmschool.com/home-page-videos/";
-
-    const handleNavigate = (link) => {
-        if(link === '/' ) {
-            navigate({pathname: '/', search: data.query})
-        } else {
-            navigate(link);
-        }
-    }
 
     if(data.primary === 'First_Slide') {
         return (
@@ -29,7 +19,7 @@ const Slide = ({data, goToSlide, current, index}) => {
                         <div className='h-full w-full flex flex-col items-center justify-center gap-10 animate-shrinkGap'>
                             <img className="w-1/2 md:w-1/3 lg:w-1/4 animate-fadeIn drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="logo"/>
                             <p className='w-full md:w-2/3 lg:w-1/2 text-xl lg:text-2xl font-thin text-white text-center drop-shadow-dark1'>{data.subHeading}</p>
-                            <img onClick={() => goToSlide(1)} className="animate-pulse h-10 duration-300 hover:scale-125 cursor-pointer drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/white/scroll_down.png`} alt="scroll_down" />
+                            <img onClick={() => goToSlide(1)} className="animate-bounce h-10 duration-300 hover:scale-125 cursor-pointer drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/white/scroll_down.png`} alt="scroll_down" />
                         </div>
                     </div>
             </div>
@@ -40,7 +30,7 @@ const Slide = ({data, goToSlide, current, index}) => {
         )
     } else {
         return (
-            <div onClick={() => handleNavigate(data.navTo)} className='h-screen relative cursor-pointer'>
+            <Link to={data.navTo} tabIndex={-1} className='h-screen relative cursor-pointer'>
                     {   data.type === 'video' &&
                         <video autoPlay muted loop playsInline className="w-full h-full object-cover">
                             {/* <source src={`${cdnURL + 'intro.mp4'}`} type="video/mp4" /> */}
@@ -70,7 +60,7 @@ const Slide = ({data, goToSlide, current, index}) => {
                             </div>
                         </div>
                     </div>
-            </div>
+            </Link>
         )
     }
 }

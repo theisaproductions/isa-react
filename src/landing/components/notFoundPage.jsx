@@ -47,7 +47,7 @@ const NotFoundPage = () => {
                         </p>
                     </div>
                     
-                    {/*  */}
+                    {/* courses */}
                     <div className='space-y-4'>
                         <h2 className='text-2xl font-bold underline'>Explore our courses</h2>
                         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
@@ -79,7 +79,7 @@ const NotFoundPage = () => {
                                 <p className='text-base'>Courses in</p>
                                 <h3 className='text-lg font-semibold'>Art</h3>
                             </Link>
-                            <Link to={'marketing'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-red-800 text-white'>
+                            <Link to={'/marketing'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-red-800 text-white'>
                                 <p className='text-base'>Courses in</p>
                                 <h3 className='text-lg font-semibold'>Marketing</h3>
                             </Link>

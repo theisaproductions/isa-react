@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 
 function useDocumentTitle(title, prevailOnUnmount = false) {
+  
   const defaultTitle = 'Indian School of Acting';
 
   useEffect(() => {

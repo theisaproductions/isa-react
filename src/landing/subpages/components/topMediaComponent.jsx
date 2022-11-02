@@ -5,10 +5,6 @@ const TopMediaComponent = ({type, mediaUrl}) => {
     const cdnURL = "https://cdn.isafilmschool.com/sub-page-videos/";
     const localUrl = `${process.env.PUBLIC_URL}/assets/images/subpageVideos/`;
 
-    useEffect(() => {
-        console.log(mediaUrl);
-    }, [])
-
     const scrollDown = () => {
         if(window) {
             const height = window.innerHeight;

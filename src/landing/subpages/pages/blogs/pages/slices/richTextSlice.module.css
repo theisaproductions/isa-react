@@ -1,0 +1,27 @@
+.slice {
+    @apply space-y-4
+}
+
+.slice a {
+    @apply text-blue-600 font-semibold
+}
+
+.slice ul {
+    @apply font-mono list-disc list-inside
+}
+.slice ol {
+    @apply font-mono list-decimal list-inside
+}
+
+.slice h2 {
+    @apply text-xl md:text-3xl font-bold
+}
+.slice h3 {
+    @apply text-lg md:text-2xl font-bold
+}
+.slice h4 {
+    @apply text-base md:text-xl font-bold
+}
+.slice h5 {
+    @apply text-sm md:text-lg font-bold
+}

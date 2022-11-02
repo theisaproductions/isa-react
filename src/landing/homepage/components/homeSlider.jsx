@@ -34,7 +34,7 @@ const HomePageSlider = (props) => {
         { theme: 'light', type: 'image', primary: false, name: 'Digital Marketing', subHeading: 'Do Things That Matter.', mediaUrl: 'images/marketing.jpg', navTo: '/marketing'},
         { theme: 'dark', type: 'video', primary: false, name: 'Art', subHeading: 'Color Your Dream.', mediaUrl: 'art.mp4', navTo: '/art'},
         { theme: 'dark', type: 'image', primary: false, name: 'Motivation, Life Lessons', subHeading: "Life's An Ocean, Sail It.", mediaUrl: 'images/motivation.jpg', navTo: '/motivation'},
-        { theme: 'dark', type: 'image', primary: false, name: 'Private Classes', subHeading: 'Online Classes. At Home Classes. Individual Sessions.', mediaUrl: 'images/private_classes.jpg', navTo: '/', query: '?page=19'},
+        { theme: 'dark', type: 'image', primary: false, name: 'Private Classes', subHeading: 'Online Classes. At Home Classes. Individual Sessions.', mediaUrl: 'images/private_classes.jpg', navTo: '/?page=19'},
         { theme: 'light', type: 'video', primary: false, name: 'Kids \n Schools \n Colleges', subHeading: 'All Courses For Kids And Students.', mediaUrl: 'schools.mp4', navTo: '/school'},
         { theme: 'light', type: 'image', primary: false, name: 'Corporate Workshops', subHeading: 'Engaging Minds, Empowering Success.', mediaUrl: 'images/corporate.jpg', navTo: '/corporate'},
         { theme: 'light', type: 'video', primary: false, name: 'ISA Productions', subHeading: 'Films. Brands. Ads. Crew.', mediaUrl: 'production.mp4', navTo: '/productions'},
