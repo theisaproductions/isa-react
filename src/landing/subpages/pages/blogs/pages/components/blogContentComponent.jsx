@@ -57,10 +57,10 @@ const BlogContentComponent = ({data}) => {
                         </div>
                     </article>
 
-                    <div className='space-y-6 pb-20'>
+                    <div className='space-y-6 pb-14'>
                         <h2 className='text-2xl font-bold'>Need Assistance?</h2>
                         <div>
-                            <a href="/?page=19" className='text-sm md:text-lg p-4 border-2 border-black/40 rounded-md hover:bg-blue-100 hover:border-blue-600 hover:text-blue-600 duration-300'>Contact our support team.</a>
+                            <a href="/?page=19" className='text-sm md:text-lg p-4 border-2 border-black/40 rounded-md hover:bg-pink-100 hover:border-pink-600 hover:text-pink-600 duration-300'>Contact our support team.</a>
                         </div>
                     </div>
                 </div>

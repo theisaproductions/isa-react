@@ -13,7 +13,7 @@ const BlogPage = () => {
     const [doc, { state }] = usePrismicDocumentByUID('blog', documentID.id)
 
     // set page title for seo
-    useDocumentTitle('');
+    useDocumentTitle(doc?.data?.article_meta_title[0]?.text);
 
     return(
         <div className='min-h-screen'>

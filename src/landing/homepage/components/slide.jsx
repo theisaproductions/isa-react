@@ -19,7 +19,7 @@ const Slide = ({data, goToSlide, current, index}) => {
                         <div className='h-full w-full flex flex-col items-center justify-center gap-10 animate-shrinkGap'>
                             <img className="w-1/2 md:w-1/3 lg:w-1/4 animate-fadeIn drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="logo"/>
                             <p className='w-full md:w-2/3 lg:w-1/2 text-xl lg:text-2xl font-thin text-white text-center drop-shadow-dark1'>{data.subHeading}</p>
-                            <img onClick={() => goToSlide(1)} className="animate-bounce h-10 duration-300 hover:scale-125 cursor-pointer drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/white/scroll_down.png`} alt="scroll_down" />
+                            <img onClick={() => goToSlide(1)} className="animate-[bounce_1s_infinite_3000ms] h-10 duration-300 hover:scale-125 cursor-pointer drop-shadow-dark1" src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/white/scroll_down.png`} alt="scroll_down" />
                         </div>
                     </div>
             </div>

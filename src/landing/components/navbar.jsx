@@ -36,6 +36,7 @@ const Menu = ({state, setState}) => {
         {name: 'About', to: '/about'},
         {name: 'Courses', to: '/?page=2'},
         {name: 'Services', to: '/?page=15'},
+        {name: 'Blogs', to: '/blogs'},
         {name: 'Collaborations', to: '/?page=16'},
     ]
 
