@@ -1,13 +1,15 @@
 import React from 'react';
-import useDocumentTitle from '../../../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import '../../common.css'
 
 const FilmmakingApplication = () => {
-
-    useDocumentTitle('ISA - Application Form for Filmmaking');
-
+    
     return(
         <div className=''>
+            <MetaTags>
+                <title>ISA - Application form for filmmaking courses</title>
+                <meta name="description" content=""/>
+            </MetaTags>
             <div className='max-w-5xl mx-auto px-4 pt-28 pb-14 flex flex-col gap-14 md:gap-20 min-h-screen'>
                 
                 {/* top section */}

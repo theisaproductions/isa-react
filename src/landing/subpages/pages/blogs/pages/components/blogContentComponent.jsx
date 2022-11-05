@@ -66,8 +66,14 @@ const BlogContentComponent = ({data}) => {
                 </div>
                 <BlogSideBar />
             </div>
-            { data.data.article_similar_blog?.uid && <SimilarBlogWidget id={data.data.article_similar_blog.uid}/> }
-            <ExploreCoursesComponent />
+            <div className='space-y-10'>
+                {/* horizontal separator */}
+                <div className='border-t border-black/30'></div>
+
+                { data.data.article_similar_blog?.uid && <SimilarBlogWidget id={data.data.article_similar_blog.uid}/> }
+
+                <ExploreCoursesComponent />
+            </div>
         </div>
         :
         <BlogNotFoundComponent />

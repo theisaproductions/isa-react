@@ -1,15 +1,17 @@
 import React from 'react';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const FitnessPage = () => {
 
-    useDocumentTitle('ISA Fitness');
-
     return (
         <div className=''>
+            <MetaTags>
+                <title>ISA Fitness</title>
+                <meta name="description" content=""/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='fitness.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 {/* just center text */}

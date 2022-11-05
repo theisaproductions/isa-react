@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const FilmmakingPage = () => {
 
-    // set page title for seo
-    useDocumentTitle('ISA Film School');
-
     return(
         <div className=''>
+            <MetaTags>
+                <title>ISA Film School</title>
+                <meta name="description" content=""/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='filmmaking.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 {/* just center text with heading and subheading */}

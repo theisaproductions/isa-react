@@ -1,13 +1,10 @@
 import React from 'react';
-import useDocumentTitle from '../../components/documentTitle';
 import SubpageFooter from '../components/subpageFooter';
+import MetaTags from 'react-meta-tags';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const ArtPage = () => {
-
-    // set page title for seo
-    useDocumentTitle('ISA School of Art');
 
     const artWorks = [
         {id: 1, url: '', price: '30,000'},
@@ -52,10 +49,13 @@ const ArtPage = () => {
         {id: 40, url: '', price: '6,85,000'},
         {id: 41, url: '', price: '4,35,000'},
     ]
-
     
     return (
         <div className=''>
+            <MetaTags>
+                <title>Indian School of Art</title>
+                <meta name="description" content={`The Indian School of Art is the best art school in India. We offer a wide range of production services and training programs at our award-winning art school.`}/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='art.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
 

@@ -1,15 +1,17 @@
 import React from 'react';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const SchoolPage = () => {
 
-    useDocumentTitle('School Collaborations');
-
     return (
         <div className=''>
+            <MetaTags>
+                <title>School Collaborations</title>
+                <meta name="description" content=""/>
+            </MetaTags>
             <TopMediaComponent type="image" mediaUrl='schools.jpg' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 

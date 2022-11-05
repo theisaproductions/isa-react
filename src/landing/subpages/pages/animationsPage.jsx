@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const AnimationsPage = () => {
 
-    // set page title for seo
-    useDocumentTitle('Indian School of Animations');
-
     return(
         <div className=''>
+            <MetaTags>
+                <title>Indian School of Animations</title>
+                <meta name="description" content={`The Indian School of Animation is the best animation school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='animation.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 {/* just center text */}

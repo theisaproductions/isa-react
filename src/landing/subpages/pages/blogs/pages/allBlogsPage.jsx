@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAllPrismicDocumentsByType } from '@prismicio/react'
-import { Link } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
 import BlogSubNavbar from './components/subNavbar';
-import useDocumentTitle from '../../../../components/documentTitle';
 import BlogPageTopSection from './components/blogPageTopSection';
 import PrimaryBlogThumb from './components/primaryBlogThumb';
 import BlogThumb from './components/blogThumb';
@@ -17,9 +16,6 @@ const AllBlogsPage = () => {
     let [restBlogItems, setRestBlogItems] = useState([]);
 
     const [documents, { state }] = useAllPrismicDocumentsByType(contentType);
-
-    // set page title for seo
-    useDocumentTitle('ISA Blogs');
 
     useEffect(() => {
         if(!documents) return;
@@ -43,6 +39,10 @@ const AllBlogsPage = () => {
 
     return(
         <div>
+            <MetaTags>
+                <title>ISA Blogs</title>
+                <meta name="description" content=""/>
+            </MetaTags>
             <BlogPageTopSection />
             <div className='px-5vw'>
                 <div className='pb-14 max-w-6xl mx-auto'>

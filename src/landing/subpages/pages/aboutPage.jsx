@@ -1,15 +1,16 @@
 import React from 'react';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 
 const AboutPage = () => {
 
-    // set page title for seo
-    useDocumentTitle('About ISA');
-
     return(
         <div className=''>
+            <MetaTags>
+                <title>About ISA</title>
+                <meta name="description" content={`The Indian School of Acting is the best acting school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='about.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-10 flex flex-col gap-14 md:gap-28'>
                 <div className='flex flex-col items-center justify-center gap-8 md:gap-12 text-center'>

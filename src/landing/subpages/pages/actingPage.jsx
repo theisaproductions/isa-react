@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useDocumentTitle from '../../components/documentTitle';
+import MetaTags from 'react-meta-tags';
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
 const ActingPage = () => {
 
-    // set page title for seo
-    useDocumentTitle('Indian School of Acting');
-
     return(
         <div className=''>
+            <MetaTags>
+                <title>Best Acting School In India | The Indian School of Acting</title>
+                <meta name="description" content={`The Indian School of Acting is the best acting school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+            </MetaTags>
             <TopMediaComponent type="video" mediaUrl='acting.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 <h1 className="quote text-center">"We will make you meet the best version of yours"</h1>
