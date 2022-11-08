@@ -9,8 +9,8 @@ const PhotographyPage = () => {
     return (
         <div className=''>
             <MetaTags>
-                <title>ISA School of Photography and Fashion</title>
-                <meta name="description" content=""/>
+                <title>Diploma In Photography In Delhi  | The Indian School of Acting</title>
+                <meta name="description" content="We offer professional photography diploma courses in Delhi. Diplomas and certificates in photography cover every aspect of the field."/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='photography.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

@@ -9,8 +9,8 @@ const DancePage = () => {
     return (
         <div className=''>
             <MetaTags>
-                <title>ISA Dance School</title>
-                <meta name="description" content=""/>
+                <title>Dance School In Delhi | The Indian School of Acting</title>
+                <meta name="description" content="The Indian School of Acting is the best dance school in Delhi. Our dance classes are for all age groups and engage with a wide range of options across all styles."/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='dance.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

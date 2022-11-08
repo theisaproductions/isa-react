@@ -10,8 +10,8 @@ const FilmmakingPage = () => {
     return(
         <div className=''>
             <MetaTags>
-                <title>ISA Film School</title>
-                <meta name="description" content=""/>
+                <title>Film Making Institute In Delhi | The Indian School of Acting</title>
+                <meta name="description" content="The Indian School of Acting is the leading film making institute in Delhi. Diploma courses in film making cover directing, production, screenwriting and distribution."/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='filmmaking.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
