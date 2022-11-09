@@ -10,8 +10,8 @@ const ActingPage = () => {
     return(
         <div className=''>
             <MetaTags>
-                <title>Best Acting School In India | The Indian School of Acting</title>
-                <meta name="description" content={`The Indian School of Acting is the best acting school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+                <title>Indian School of Acting | Acting Classes in Delhi</title>
+                <meta name="description" content={`The Indian School of Acting offers an exciting and immersive path to acting. Indian School of Acting provides the best acting classes for enthusiastic dancers in Delhi.`}/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='acting.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

@@ -10,8 +10,8 @@ const AnimationsPage = () => {
     return(
         <div className=''>
             <MetaTags>
-                <title>Indian School of Animations</title>
-                <meta name="description" content={`The Indian School of Animation is the best animation school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+                <title>3D Animation Film Making Course | The Indian School of Acting</title>
+                <meta name="description" content={`We provide a diploma course in 3D animation filmmaking in Delhi. We help and guide students to find work in the animation industry according to their skills.`}/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='animation.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

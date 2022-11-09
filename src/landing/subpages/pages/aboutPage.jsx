@@ -8,8 +8,8 @@ const AboutPage = () => {
     return(
         <div className=''>
             <MetaTags>
-                <title>About ISA</title>
-                <meta name="description" content={`The Indian School of Acting is the best acting school in India. We offer a wide range of production services and training programs at our award-winning film school.`}/>
+                <title>Acting School In Delhi | The Indian School of Acting</title>
+                <meta name="description" content={`The Indian School of Acting in Delhi offers the best acting courses. A variety of diploma and certificate courses are available in the performing and visual arts.`}/>
             </MetaTags>
             <TopMediaComponent type="video" mediaUrl='about.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-10 flex flex-col gap-14 md:gap-28'>
