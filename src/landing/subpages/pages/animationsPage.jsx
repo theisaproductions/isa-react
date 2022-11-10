@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
@@ -9,10 +9,10 @@ const AnimationsPage = () => {
 
     return(
         <div className=''>
-            <MetaTags>
+            <Helmet>
                 <title>3D Animation Film Making Course | The Indian School of Acting</title>
                 <meta name="description" content={`We provide a diploma course in 3D animation filmmaking in Delhi. We help and guide students to find work in the animation industry according to their skills.`}/>
-            </MetaTags>
+            </Helmet>
             <TopMediaComponent type="video" mediaUrl='animation.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 {/* just center text */}

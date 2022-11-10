@@ -1,5 +1,5 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
@@ -8,10 +8,10 @@ const MusicPage = () => {
 
     return (
         <div className=''>
-            <MetaTags>
+            <Helmet>
                 <title>ISA Music School</title>
                 <meta name="description" content=""/>
-            </MetaTags>
+            </Helmet>
             <TopMediaComponent type="video" mediaUrl='music.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
                 

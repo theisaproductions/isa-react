@@ -1,9 +1,6 @@
 import React, { lazy, useLayoutEffect } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
-import NotFoundPage from './landing/components/notFoundPage';
-import BlogsRoot from './landing/subpages/pages/blogs/blogsRoot';
-import AllBlogsPage from './landing/subpages/pages/blogs/pages/allBlogsPage';
-import BlogPage from './landing/subpages/pages/blogs/pages/blogPage';
+import TagManager from 'react-gtm-module';
 
 // pages
 const Landing = lazy(() => import('./landing/landing'));
@@ -24,6 +21,10 @@ const ProductionPage = lazy(() => import('./landing/subpages/pages/productionsPa
 const RoutesvillePage = lazy(() => import('./landing/subpages/pages/routesvillePage'));
 const SchoolPage = lazy(() => import('./landing/subpages/pages/schoolPage'));
 const TalentPage = lazy(() => import('./landing/subpages/pages/talentPage'));
+const NotFoundPage = lazy(() => import('./landing/components/notFoundPage'));
+const BlogsRoot = lazy(() => import('./landing/subpages/pages/blogs/blogsRoot'));
+const AllBlogsPage = lazy(() => import('./landing/subpages/pages/blogs/pages/allBlogsPage'));
+const BlogPage = lazy(() => import('./landing/subpages/pages/blogs/pages/blogPage'));
 
 // application pages
 const ApplyPage = lazy(() => import('./landing/subpages/pages/applyPage/applicationPage'));
@@ -41,6 +42,13 @@ const Wrapper = ({children}) => {
 } 
 
 function App() {
+
+  const tagManagerArgs = {
+    gtmId: 'GTM-WW3KH7K'
+  }
+  
+  TagManager.initialize(tagManagerArgs);
+
   return (
     <div className=''>
       <Wrapper>

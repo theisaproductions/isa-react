@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import '../../common.css'
 
 const ActingApplication = () => {
@@ -19,10 +19,10 @@ const ActingApplication = () => {
 
     return(
         <div className=''>
-            <MetaTags>
+            <Helmet>
                 <title>ISA - Application form for acting course.</title>
                 <meta name="description" content=""/>
-            </MetaTags>
+            </Helmet>
             <div className='max-w-5xl mx-auto px-4 pt-28 pb-14 flex flex-col gap-14 md:gap-20 min-h-screen'>
 
                 {/* top section */}

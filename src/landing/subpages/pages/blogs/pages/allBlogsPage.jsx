@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAllPrismicDocumentsByType } from '@prismicio/react'
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import BlogSubNavbar from './components/subNavbar';
 import BlogPageTopSection from './components/blogPageTopSection';
 import PrimaryBlogThumb from './components/primaryBlogThumb';
@@ -39,10 +39,10 @@ const AllBlogsPage = () => {
 
     return(
         <div>
-            <MetaTags>
+            <Helmet>
                 <title>ISA Blogs</title>
-                <meta name="description" content=""/>
-            </MetaTags>
+                <meta name="description" content="The Indian School of Acting | Blogs"/>
+            </Helmet>
             <BlogPageTopSection />
             <div className='px-5vw'>
                 <div className='pb-14 max-w-6xl mx-auto'>

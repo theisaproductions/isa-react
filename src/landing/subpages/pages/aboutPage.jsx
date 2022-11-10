@@ -1,5 +1,5 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import SubpageFooter from '../components/subpageFooter';
 import TopMediaComponent from '../components/topMediaComponent';
 
@@ -7,10 +7,10 @@ const AboutPage = () => {
 
     return(
         <div className=''>
-            <MetaTags>
+            <Helmet>
                 <title>Acting School In Delhi | The Indian School of Acting</title>
                 <meta name="description" content={`The Indian School of Acting in Delhi offers the best acting courses. A variety of diploma and certificate courses are available in the performing and visual arts.`}/>
-            </MetaTags>
+            </Helmet>
             <TopMediaComponent type="video" mediaUrl='about.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-10 flex flex-col gap-14 md:gap-28'>
                 <div className='flex flex-col items-center justify-center gap-8 md:gap-12 text-center'>

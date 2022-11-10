@@ -1,6 +1,6 @@
 import React from 'react';
 import SubpageFooter from '../components/subpageFooter';
-import MetaTags from 'react-meta-tags';
+import {Helmet} from "react-helmet";
 import TopMediaComponent from '../components/topMediaComponent';
 import './common.css';
 
@@ -52,10 +52,10 @@ const ArtPage = () => {
     
     return (
         <div className=''>
-            <MetaTags>
+            <Helmet>
                 <title>Indian School of Art</title>
                 <meta name="description" content={`The Indian School of Art is the best art school in India. We offer a wide range of production services and training programs at our award-winning art school.`}/>
-            </MetaTags>
+            </Helmet>
             <TopMediaComponent type="video" mediaUrl='art.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
 
