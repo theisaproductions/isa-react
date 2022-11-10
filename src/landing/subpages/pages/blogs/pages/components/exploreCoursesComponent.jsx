@@ -10,13 +10,13 @@ const ExploreCoursesComponent = () => {
                     <p className='text-base'>Courses in</p>
                     <h3 className='text-lg font-semibold'>Acting</h3>
                 </Link>
-                <Link to={'/animations'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-sky-800 text-white'>
-                    <p className='text-base'>Courses in</p>
-                    <h3 className='text-lg font-semibold'>Animation</h3>
-                </Link>
                 <Link to={'/filmmaking'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-blue-800 text-white'>
                     <p className='text-base'>Courses in</p>
                     <h3 className='text-lg font-semibold'>Filmmaking</h3>
+                </Link>
+                <Link to={'/animations'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-sky-800 text-white'>
+                    <p className='text-base'>Courses in</p>
+                    <h3 className='text-lg font-semibold'>Animation</h3>
                 </Link>
                 <Link to={'/photography'} className='hover:scale-105 hover:shadow-md hover:shadow-gray-800 duration-300 shadow-sm shadow-gray-800 border-2 rounded-lg p-4 bg-gradient-to-r from-black via-slate-800 to-violet-800 text-white'>
                     <p className='text-base'>Courses in</p>
