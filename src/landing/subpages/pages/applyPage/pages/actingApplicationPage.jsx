@@ -5,17 +5,8 @@ import '../../common.css'
 
 const ActingApplication = () => {
 
-    const handleDownload = () => {
-        fetch(`${process.env.PUBLIC_URL}/assets/files/ISA_Fee_Structure.pdf`).then(response => {
-            response.blob().then(blob => {
-                const fileURL = window.URL.createObjectURL(blob);
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'ISA_Fee_Structure.pdf';
-                alink.click();
-            })
-        })
-    }
+    const feeStructureUrl = `${process.env.PUBLIC_URL}/assets/files/ISA_Fee_Structure.pdf`;
+    const codeOfConductUrl = `${process.env.PUBLIC_URL}/assets/files/ISA_Code_of_Conduct.pdf`;
 
     return(
         <div className=''>
@@ -29,7 +20,8 @@ const ActingApplication = () => {
                 <div className='flex flex-col gap-6 items-center justify-center'>
                     <h1 className="text-5xl md:text-6xl font-black text-center drop-shadow-dark2 mb-6">Application Form</h1>
                     <a target="_blank" href="https://forms.gle/D1tyCYRmiR1R4JP4A" className="bg-black/90 px-10 py-6 subheading text-green-400 hover:drop-shadow-dark1 duration-300">Click here to apply</a>
-                    <h3 onClick={handleDownload} className='text-base cursor-pointer hover:text-pink-700 duration-300'>Download Fee Structure</h3>
+                    <a href={feeStructureUrl} download className='text-base cursor-pointer hover:text-pink-700 duration-300'>Download Fee Structure</a>
+                    <a href={codeOfConductUrl} download className='text-base cursor-pointer hover:text-pink-700 duration-300'>Download Code of Conduct</a>
                 </div>
 
                 {/* separator */}
@@ -198,7 +190,7 @@ const ActingApplication = () => {
                         - Taxes will extra as applicable <br/>
                         - Fee excludes any accommodation facility <br/>
                         - Application based admissions only <br/>
-                        - Special discounts and scholarship of up to 60% to deserving applicants <br/>
+                        - The fee once paid is Non Refundable and Non Adjustable under any circumstances. <br/>
                     </div>
                 </div>
 
