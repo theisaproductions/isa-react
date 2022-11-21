@@ -9,8 +9,8 @@ const MusicPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA Music School</title>
-                <meta name="description" content=""/>
+                <title>Music Classes In Delhi | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting offers music classes in Delhi. The purpose of our program is to enable our young musicians to excel in a safe and supportive culture."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='music.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

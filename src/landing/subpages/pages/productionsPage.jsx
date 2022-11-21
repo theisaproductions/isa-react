@@ -9,8 +9,8 @@ const ProductionPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA Productions</title>
-                <meta name="description" content=""/>
+                <title>Agency For Creating Digital Media Content | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting creates high-quality digital media content using imagination, storytelling, and cutting-edge technology to create content for any medium."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='production.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

@@ -9,8 +9,8 @@ const RoutesvillePage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>Routesville</title>
-                <meta name="description" content=""/>
+                <title>Creative Space | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting's creative space, Routesville is an alternative art and performance space in Delhi. We organize and curate workshops and exhibitions for all artists at Routesville."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='routesville.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
