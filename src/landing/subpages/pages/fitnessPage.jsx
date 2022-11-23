@@ -9,8 +9,8 @@ const FitnessPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA Fitness</title>
-                <meta name="description" content=""/>
+                <title>Full Body Workout Plan | Indian School Of Acting</title>
+                <meta name="description" content="Finding a workout you enjoy is the key. ISA offers a full-body workout plan for adults and kids to build a physical structure, develop discipline, and enhance concentration."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='fitness.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

@@ -53,8 +53,8 @@ const ArtPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>Indian School of Art</title>
-                <meta name="description" content={`The Indian School of Art is the best art school in India. We offer a wide range of production services and training programs at our award-winning art school.`}/>
+                <title>Art Schools In India | Indian School Of Acting</title>
+                <meta name="description" content={`Indian School Of Acting provides art classes, calligraphy classes, and art workshops for corporates in India. ISA Art Class inspires students to reach their creative goals.`}/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='art.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

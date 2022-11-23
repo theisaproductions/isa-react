@@ -9,8 +9,8 @@ const MotivationPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA Motivation</title>
-                <meta name="description" content=""/>
+                <title>Mental Health Support | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting Motivation School provides personal development and motivation courses to improve mental health and help you improve both professionally and personally."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='motivation.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

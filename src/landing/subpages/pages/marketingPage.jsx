@@ -9,8 +9,8 @@ const MarketingPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA School of Marketing</title>
-                <meta name="description" content=""/>
+                <title>School Of Digital Marketing | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting offers digital marketing courses that provide detailed knowledge of the latest digital marketing techniques. View the digital marketing training syllabus."/>
             </Helmet>
             <TopMediaComponent type="video" mediaUrl='marketing.mp4' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

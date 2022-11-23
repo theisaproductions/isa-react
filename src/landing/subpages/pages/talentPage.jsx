@@ -9,8 +9,8 @@ const TalentPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>ISA Talent</title>
-                <meta name="description" content=""/>
+                <title>Talent Management Companies In India | Indian School Of Acting</title>
+                <meta name="description" content="ISA Talent Management and Casting is one of the world's leading talent and casting agencies, representing artists, technicians, broadcasters, actors, celebrities, and models."/>
             </Helmet>
             <TopMediaComponent type="image" mediaUrl='talent.jpg' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
