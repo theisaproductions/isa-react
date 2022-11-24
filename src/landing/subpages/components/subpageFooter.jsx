@@ -21,7 +21,7 @@ const SubpageFooter = () => {
         <div className='bg-black'>
             <div className='max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10 md:gap-20 text-white'>
                 <div className='pr-10 flex'>
-                    <Link to={'/'} className="z-100">
+                    <Link to={'/'} className="">
                         <img className='h-16 md:h-28' src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="Logo"/>
                     </Link>
                 </div>

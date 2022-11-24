@@ -20,9 +20,11 @@ const MenuButton = ({onChange, state}) => {
         }
     }
     return (
-        <div onClick={toggleMenu} className={`z-100 group flex flex-col drop-shadow-dark1 cursor-pointer cursor-pointer md:py-2 duration-200 ${menuOpen ? 'gap-0': 'gap-3'}`}>
-            <div className={`h-1 bg-white w-8 duration-200 drop-shadow-md ${menuOpen ? 'rotate-45 -mb-1 group-hover:-mb-2': ''}`}></div>
-            <div className={`h-1 bg-white w-8 duration-200 drop-shadow-md ${menuOpen ? '-rotate-45': 'group-hover:w-6'}`}></div>
+        <div onClick={toggleMenu} className={`z-100 group drop-shadow-dark1 cursor-pointer md:py-2`}>
+            <div className={`h-6 duration-200 group ${menuOpen ? 'sapce-y-0 pt-2': 'space-y-3'}`}>
+                <div className={`h-1 bg-white w-8 duration-200 drop-shadow-md ${menuOpen ? 'rotate-45 -mb-1 group-hover:mt-1': ''}`}></div>
+                <div className={`h-1 bg-white w-8 duration-200 drop-shadow-md ${menuOpen ? '-rotate-45 group-hover:-mt-2': ''}`}></div>
+            </div>
         </div>
     )
 }
@@ -66,7 +68,7 @@ const Menu = ({state, setState}) => {
         }
     }, [])
     
-    const cdnURL = "https://cdn.isafilmschool.com/home-page-videos/";
+    const cdnURL = "https://cdn.isafilmschool.com/";
 
     const handleLinkClick = () => {
         setState(false)
@@ -99,14 +101,14 @@ const Menu = ({state, setState}) => {
                                 })}
                             </div>
                         </div>
-                        <div className='h-32 flex flex-col items-center gap-4 px-4'>
+                        <div className='pt-4 pb-20 md:pb-10 flex flex-col items-center gap-4 px-4'>
                                 <h3 className='text-lg uppercase'>Follow us</h3>
                                 <div className='flex gap-x-4 gap-y-2 flex-wrap items-center justify-center text-sm md:text-base'>
-                                    <a target="_blank" href="https://www.facebook.com/theindianschoolofacting/" className="hover:text-blue-500">FACEBOOK</a>
-                                    <a target="_blank" href="https://twitter.com/ISAFilmschool" className="hover:text-sky-400">TWITTER</a>
-                                    <a target="_blank" href="https://www.instagram.com/theindianschoolofacting/" className="hover:text-pink-500">INSTAGRAM</a>
-                                    <a target="_blank" href="https://www.linkedin.com/company/the-indian-school-of-acting/"className="hover:text-blue-600">LINKEDIN</a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCXRE4_lhZmwD_5xPLoTiiYg" className="hover:text-red-500">YOUTUBE</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/theindianschoolofacting/" className="hover:text-blue-500">FACEBOOK</a>
+                                    <a target="_blank" rel="noreferrer" href="https://twitter.com/ISAFilmschool" className="hover:text-sky-400">TWITTER</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/theindianschoolofacting/" className="hover:text-pink-500">INSTAGRAM</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/the-indian-school-of-acting/"className="hover:text-blue-600">LINKEDIN</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCXRE4_lhZmwD_5xPLoTiiYg" className="hover:text-red-500">YOUTUBE</a>
                                 </div>
                         </div>
                     </div>

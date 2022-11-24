@@ -25,12 +25,12 @@ const SliderNav = ({slides, goToSlide, currentSlide}) => {
                                     slides[currentSlide.current].theme === 'dark' ? 
                                     <div className='flex gap-1 items-center'>
                                         <div className={`h-[1px] bg-black drop-shadow-dark1 duration-300 ${currentSlide.current === index ? 'w-2' : 'w-0'}`}></div>
-                                        <span className={`text-sm sm:text-sm md:text-base font-mono drop-shadow-dark1 duration-300 hover:text-black/70 ${currentSlide.current === index ? 'text-black' : 'text-black/40'}`}>{getNumber(index + 1)}</span>
+                                        <span className={`text-sm sm:text-sm md:text-base font-mono drop-shadow-dark1 duration-300 hover:text-black/70 ${currentSlide.current === index ? 'text-black' : 'text-black/60'}`}>{getNumber(index + 1)}</span>
                                     </div>
                                     : 
                                     <div className='flex gap-1 items-center'>
                                         <div className={`h-[1px] bg-white drop-shadow-dark1 duration-300 ${currentSlide.current === index ? 'w-2' : 'w-0'}`}></div>
-                                        <span className={`text-sm sm:text-sm md:text-base font-mono drop-shadow-dark1 duration-300 hover:text-gray-200 ${currentSlide.current === index ? 'text-white' : 'text-gray-400/50'}`}>{getNumber(index + 1)}</span>
+                                        <span className={`text-sm sm:text-sm md:text-base font-mono drop-shadow-dark1 duration-300 hover:text-gray-200 ${currentSlide.current === index ? 'text-white' : 'text-gray-400/70'}`}>{getNumber(index + 1)}</span>
                                     </div>
                                 }
                                 
