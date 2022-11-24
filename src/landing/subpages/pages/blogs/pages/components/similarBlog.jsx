@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { usePrismicDocumentByUID } from '@prismicio/react'
-import BlogThumb from './blogThumb';
 import PrimaryBlogThumb from './primaryBlogThumb';
 
 const SimilarBlogWidget = ({id}) => {
 
     const [doc, { state }] = usePrismicDocumentByUID('blog', id ? id : null)
-
-    useEffect(() => {
-        console.log(id, doc);
-    }, [doc])
-    
 
     if(state === 'loaded') return (
         <div className='pb-6'>
