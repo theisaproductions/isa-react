@@ -9,8 +9,8 @@ const SchoolPage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>School Collaborations</title>
-                <meta name="description" content=""/>
+                <title>School Event Management | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting is a school of event management that provides schools, colleges, and organizations with the best faculty for performing arts and arts courses across India."/>
             </Helmet>
             <TopMediaComponent type="image" mediaUrl='schools.jpg' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>

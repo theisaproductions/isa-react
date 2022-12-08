@@ -9,8 +9,8 @@ const CorporatePage = () => {
     return (
         <div className=''>
             <Helmet>
-                <title>Corporate Collaborations</title>
-                <meta name="description" content=""/>
+                <title>Employee Engagement Solution Providers In India | Indian School Of Acting</title>
+                <meta name="description" content="Indian School Of Acting provides employee engagement solutions. Our resources are shared to provide high-value, socially responsible, and relevant team-building experiences."/>
             </Helmet>
             <TopMediaComponent type="image" mediaUrl='corporate.jpg' />
             <div className='max-w-5xl mx-auto px-4 py-14 flex flex-col gap-14 md:gap-28'>
