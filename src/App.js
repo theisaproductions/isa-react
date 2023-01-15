@@ -32,6 +32,10 @@ const ActingApplication = lazy(() => import('./landing/subpages/pages/applyPage/
 const AnimationApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/animationApplicationPage'));
 const FilmmakingApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/filmmakingApplicationPage'));
 
+// campaign pages
+const CampaignPage = lazy(() => import('./landing/campaignPages/campaignPage'));
+
+
 // Scroll to top wrapper
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -82,6 +86,7 @@ function App() {
                   <Route path=":id" element={<BlogPage />}/>
               </Route>
             </Route>
+            <Route path="campaign" element={<CampaignPage />}></Route>
         </Routes>
       </Wrapper>
     </div>
