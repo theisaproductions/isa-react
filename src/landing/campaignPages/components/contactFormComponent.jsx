@@ -5,16 +5,13 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 
-// styles
-import 'react-phone-number-input/style.css';
-
 // components
 import Spinner from '../../components/spinner';
 import PhoneInputField from './phoneInputField';
 import { getLocation } from '../../services/locationService';
 
 // captures location info from ip and updates the form value.
-const HiddenData = ({onChange}) => {
+const HiddenData = () => {
     const { values, setFieldValue } = useFormikContext();
     useEffect(() => {
         getLocation().then(res => {
@@ -26,7 +23,7 @@ const HiddenData = ({onChange}) => {
     return null;
 }
 
-const ContactFormComponent = () => {
+const ContactFormComponent = ({darkMode}) => {
 
     const api = "https://submit-form.com/OHNK4wOs";
     
@@ -60,7 +57,6 @@ const ContactFormComponent = () => {
     });
 
     const handleSubmit = (value, reset) => {
-        console.log(value);
         setSubmitting(true);
         axios.post(api, value).then(res => {
             setSubmitting(false);
@@ -72,7 +68,7 @@ const ContactFormComponent = () => {
         })
     }
 
-    const renderError = (message) => <p className="text-xs text-red-300 mt-1 font-semibold">{message}</p>;
+    const renderError = (message) => <p className={`text-xs mt-1 font-semibold ${darkMode ? 'text-red-600':'text-red-300'}`}>{message}</p>;
 
     return (
         <div className='w-full'>
@@ -84,11 +80,11 @@ const ContactFormComponent = () => {
                 <Form>
                     <div className="space-y-2">
                         <div>
-                            <Field disabled={submitting} name="name" type="text" placeholder="Enter your name*" className="w-full outline-none bg-transparent py-2 text-xl placeholder:text-white text-white border-b-2"/>
+                            <Field disabled={submitting} name="name" type="text" placeholder="Enter your name*" className={`${darkMode ? 'placeholder:text-black text-black border-black':'placeholder:text-white text-white border-white'} w-full outline-none bg-transparent py-2 text-xl border-b-2`}/>
                             <ErrorMessage name="name" render={renderError} />
                         </div>
                         <div>
-                            <Field disabled={submitting} name="email" type="email" placeholder="Enter your email address*" className="w-full outline-none bg-transparent py-2 text-xl placeholder:text-white text-white border-b-2"/>
+                            <Field disabled={submitting} name="email" type="email" placeholder="Enter your email address*" className={`${darkMode ? 'placeholder:text-black text-black border-black':'placeholder:text-white text-white border-white'} w-full outline-none bg-transparent py-2 text-xl border-b-2`}/>
                             <ErrorMessage name="email" render={renderError} />
                         </div>
                         <div>
@@ -98,11 +94,13 @@ const ContactFormComponent = () => {
                             type="tel"
                             placeholder="Enter your phone number."
                             international
+                            darkMode={darkMode}
                             />
                             <ErrorMessage name="phone" render={renderError} />
                         </div>
                         <div>
-                            <Field disabled={submitting} as="select" name="course" className="w-full py-2 bg-transparent text-xl border-b-2 text-white outline-none">
+                            <Field disabled={submitting} as="select" name="course" className={`${darkMode ? 'text-black border-black' : 'text-white border-white'} w-full py-2 bg-transparent text-xl border-b-2 outline-none`}>
+                                
                                 <option value="Acting" className='text-black'>Acting</option>
                                 <option value="Filmmaking" className='text-black'>Filmmaking</option>
                                 <option value="Others" className='text-black'>Others</option>
@@ -110,7 +108,7 @@ const ContactFormComponent = () => {
                             <ErrorMessage name="course" render={renderError} />
                         </div>
                         <div>
-                            <Field disabled={submitting} name="message" type="text" placeholder="Please enter your message" className="w-full outline-none bg-transparent py-2 text-xl placeholder:text-white text-white border-b-2"/>
+                            <Field disabled={submitting} name="message" type="text" placeholder="Please enter your message" className={`${darkMode ? 'placeholder:text-black text-black border-black':'placeholder:text-white text-white border-white'} w-full outline-none bg-transparent py-2 text-xl border-b-2`}/>
                             <ErrorMessage name="message" render={renderError} />
                         </div>
                     </div>

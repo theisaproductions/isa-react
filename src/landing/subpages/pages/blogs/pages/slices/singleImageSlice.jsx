@@ -4,7 +4,7 @@ import { PrismicImage } from '@prismicio/react'
 const SingleImageSlice = ({slice}) => {
     return(
         <section>
-            <PrismicImage field={slice.primary.single_image} />
+            <PrismicImage field={slice?.primary?.single_image} />
         </section>
     )
 }

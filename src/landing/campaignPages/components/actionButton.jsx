@@ -1,7 +1,7 @@
-const ActionButton = (props) => {
+const ActionButton = ({whatsapp_url, phone_url}) => {
     return (
         <div className="p-4 flex gap-2 fixed bottom-0 right-0 z-40">
-            <a href="https://wa.me/8120174322">
+            <a href={whatsapp_url}>
                 <svg className="h-16 hover:scale-105 cursor-pointer" viewBox="0 0 375 395" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_102_3)">
                     <circle cx="177.002" cy="177.002" r="167.002" fill="#EBEBEB"/>
@@ -24,7 +24,7 @@ const ActionButton = (props) => {
                 </svg>
             </a>
 
-            <a href="tel:+918130174322" className="h-14 w-14 drop-shadow-dark1 hover:scale-105 border-2 border-white cursor-pointer rounded-full bg-blue-600 flex items-center justify-center">
+            <a href={phone_url} className="h-14 w-14 drop-shadow-dark1 hover:scale-105 border-2 border-white cursor-pointer rounded-full bg-blue-600 flex items-center justify-center">
                 <svg className="mr-1 mt-1" width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.67962 3.32038L7.29289 2.70711C7.68342 2.31658 8.31658 2.31658 8.70711 2.70711L11.2929 5.29289C11.6834 5.68342 11.6834 6.31658 11.2929 6.70711L9.50048 8.49952C9.2016 8.7984 9.1275 9.255 9.31653 9.63307C10.4093 11.8186 12.1814 13.5907 14.3669 14.6835C14.745 14.8725 15.2016 14.7984 15.5005 14.4995L17.2929 12.7071C17.6834 12.3166 18.3166 12.3166 18.7071 12.7071L21.2929 15.2929C21.6834 15.6834 21.6834 16.3166 21.2929 16.7071L20.6796 17.3204C18.5683 19.4317 15.2257 19.6693 12.837 17.8777L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L6.12226 11.163C4.33072 8.7743 4.56827 5.43173 6.67962 3.32038Z" fill="white"/>
                 </svg>

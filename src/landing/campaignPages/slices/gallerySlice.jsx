@@ -12,7 +12,7 @@ const GallerySlice = ({slice}) => {
 
     return (
         <div className="px-4 sm:px-10 md:px-14 lg:px-24 py-6 md:py-20 space-y-14">
-            <h1 className="text-6xl">{slice.primary.title[0].text}</h1>
+            <h1 className="text-6xl">{slice?.primary?.title[0]?.text}</h1>
 
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-5/6">
@@ -34,15 +34,15 @@ const GallerySlice = ({slice}) => {
                             },
                         }}
                     >
-                        {slice.items.map((item, index) => {
+                        {slice?.items?.map((item, index) => {
                             return (
                                 <SwiperSlide 
                                     key={index}
                                 >
                                     <div className="relative bg-gradient-to-r from-orange-300 to-rose-300" style={{paddingTop: '64%'}}>
                                         <div
-                                            className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                                            style={{backgroundImage: `url("${item.gallery_image.url}")`}}
+                                            className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-slate-500 to-yellow-100 bg-cover bg-center bg-no-repeat"
+                                            style={{backgroundImage: `url("${item?.gallery_image?.url}")`}}
                                         ></div>
                                     </div>
                                 </SwiperSlide>

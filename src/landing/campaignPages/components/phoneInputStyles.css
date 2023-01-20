@@ -1,11 +1,15 @@
 .PhoneInput {
     --PhoneInputCountryFlag-height: 24px;
     --PhoneInputCountryFlag-borderColor: none;
-    --PhoneInputCountrySelectArrow-color: #fff;
     --PhoneInputCountrySelectArrow-opacity: 1;
     --PhoneInput-color--focus: #000;
-    border-bottom: 2px solid #fff;
     padding: 8px;
+}
+.darkArrow {
+    --PhoneInputCountrySelectArrow-color: #000;
+}
+.lightArrow {
+    --PhoneInputCountrySelectArrow-color: #fff;
 }
 .PhoneInput select {
     color: #fff !important;
@@ -14,6 +18,4 @@
 .PhoneInput input {
     background-color: transparent;
     outline: none;
-    color: white;
-    font-size: 18px;
 }
