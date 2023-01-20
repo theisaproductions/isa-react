@@ -7,8 +7,9 @@ import {
   BrowserRouter
 } from "react-router-dom";
 
-import { PrismicProvider } from '@prismicio/react'
-import { client } from './landing/prismic';
+// prismic
+import { PrismicProvider, PrismicToolbar } from '@prismicio/react'
+import { client, repositoryName } from './landing/prismic';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
       </div>
     }>
       <PrismicProvider client={client}>
+        <PrismicToolbar repositoryName={repositoryName} />
         <App />
       </PrismicProvider>
     </Suspense>

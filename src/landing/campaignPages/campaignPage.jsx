@@ -1,6 +1,8 @@
-import { useSinglePrismicDocument, SliceZone } from '@prismicio/react';
+import { usePrismicDocumentByUID, SliceZone } from '@prismicio/react';
 import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
+import { useParams } from 'react-router-dom';
+import NotFoundPage from '../components/notFoundPage';
 
 // components
 import Spinner from '../components/spinner';
@@ -18,9 +20,12 @@ import UspSlice from './slices/uspSlice';
 
 const CampaignPage = (props) => {
 
-    const [document, { state }] = useSinglePrismicDocument('campaign-page-1');
+    const documentID = useParams();
+
+    const [document, { state }] = usePrismicDocumentByUID('campaign-page-1', documentID.id);
 
     useEffect(() => {
+        console.log(document);
         console.log(state);
     })
 
@@ -30,7 +35,10 @@ const CampaignPage = (props) => {
                 <Spinner size="md" />
             </div>
         )
-    } else if(state === 'loaded') {
+    } else if(state  === 'failed') {
+        return <NotFoundPage />
+    }
+    else if(state === 'loaded') {
         return (
             <div className='bg-gradient-to-r from-rose-100 to-teal-100'>
                 {/* Toast */}

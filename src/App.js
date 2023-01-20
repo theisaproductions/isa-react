@@ -86,7 +86,7 @@ function App() {
                   <Route path=":id" element={<BlogPage />}/>
               </Route>
             </Route>
-            <Route path="campaign" element={<CampaignPage />}></Route>
+            <Route path="promo/:id" element={<CampaignPage />}></Route>
         </Routes>
       </Wrapper>
     </div>
