@@ -15,11 +15,11 @@ export const client = prismic.createClient(repositoryName, {
     routes: [
       {
         type: 'blog',
-        path: '/blogs'
+        path: '/blogs/:uid'
       },
       {
         type: 'campaign-page-1',
-        path: '/promo'
+        path: '/promo/:uid'
       }
     ],
 });

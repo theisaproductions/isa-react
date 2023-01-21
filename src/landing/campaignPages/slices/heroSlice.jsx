@@ -19,7 +19,7 @@ const HeroSlice = ({slice}) => {
                         :
                         <img className='h-16 md:h-28' src={`${process.env.PUBLIC_URL}/assets/images/logo/white.png`} alt="Logo"/>
                     }
-                    <h1 className={`${darkMode ? 'text-black':'text-white'} text-6xl`}>{slice?.primary?.title}</h1>
+                    <h1 className={`${darkMode ? 'text-black':'text-white'} text-4xl md:text-6xl`}>{slice?.primary?.title}</h1>
                     <p className={`${darkMode ? 'text-black':'text-white'} text-xl font-light`}>{slice?.primary?.sub_heading}</p>
                 </div>
                 <div className='md:w-1/2'>
