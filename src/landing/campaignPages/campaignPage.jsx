@@ -1,7 +1,8 @@
-import { usePrismicDocumentByUID, SliceZone } from '@prismicio/react';
+
 import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { useParams } from 'react-router-dom';
+import { SliceZone, usePrismicDocumentByUID } from '@prismicio/react';
 import NotFoundPage from '../components/notFoundPage';
 
 // components
@@ -37,8 +38,7 @@ const CampaignPage = (props) => {
         )
     } else if(state  === 'failed') {
         return <NotFoundPage />
-    }
-    else if(state === 'loaded') {
+    } else if(state === 'loaded') {
         return (
             <div className='bg-gradient-to-r from-rose-100 to-teal-100'>
                 {/* Toast */}
