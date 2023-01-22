@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { useParams } from 'react-router-dom';
@@ -25,6 +26,7 @@ const CampaignPage = (props) => {
     const [document, { state }] = usePrismicDocumentByUID('campaign-page-1', documentID.id);
 
     useEffect(() => {
+        console.log(document);
         console.log(state);
     })
 

@@ -35,6 +35,9 @@ const FilmmakingApplication = lazy(() => import('./landing/subpages/pages/applyP
 // campaign pages
 const CampaignPage = lazy(() => import('./landing/campaignPages/campaignPage'));
 
+// preview
+const PreviewComponent = lazy(() => import('./landing/preview'));
+
 
 // Scroll to top wrapper
 const Wrapper = ({children}) => {
@@ -87,6 +90,7 @@ function App() {
               </Route>
             </Route>
             <Route path="promo/:id" element={<CampaignPage />}></Route>
+            <Route path="preview" element={<PreviewComponent />}></Route>
         </Routes>
       </Wrapper>
     </div>
