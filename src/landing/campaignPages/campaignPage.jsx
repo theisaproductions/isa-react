@@ -31,8 +31,7 @@ const CampaignPage = (props) => {
         )
     } else if(state  === 'failed') {
         return <NotFoundPage />
-    }
-    else if(state === 'loaded') {
+    } else if(state === 'loaded') {
         return (
             <div className='bg-gradient-to-r from-rose-100 to-teal-100'>
                 {/* Toast */}
