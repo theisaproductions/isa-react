@@ -1,5 +1,4 @@
 import { usePrismicDocumentByUID, SliceZone } from '@prismicio/react';
-import { useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { useParams } from 'react-router-dom';
 import NotFoundPage from '../components/notFoundPage';
@@ -23,11 +22,6 @@ const CampaignPage = (props) => {
     const documentID = useParams();
 
     const [document, { state }] = usePrismicDocumentByUID('campaign-page-1', documentID.id);
-
-    useEffect(() => {
-        console.log(document);
-        console.log(state);
-    })
 
     if(state === 'loading' || state === 'idle') {
         return (

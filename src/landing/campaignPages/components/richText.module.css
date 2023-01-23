@@ -1,0 +1,12 @@
+.container {
+    @apply space-y-2
+}
+.container a {
+    @apply text-blue-600 font-semibold
+}
+.container ul {
+    @apply font-mono list-disc list-inside
+}
+.container ol {
+    @apply font-mono list-decimal list-inside
+}

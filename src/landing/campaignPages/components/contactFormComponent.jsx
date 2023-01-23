@@ -62,6 +62,7 @@ const ContactFormComponent = ({darkMode}) => {
             setSubmitting(false);
             reset();
             toast.success('Message Sent');
+            window.dataLayer.push({'event': 'contact-form-submitted'})
         }).catch(error => {
             setSubmitting(false);
             toast.error('Some error occurred!');
