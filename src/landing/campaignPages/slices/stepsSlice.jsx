@@ -1,5 +1,6 @@
-const StepsSlice = ({slice}) => {
+import { HashLink } from "react-router-hash-link";
 
+const StepsSlice = ({slice}) => {
     return (
         <div className="px-4 sm:px-10 md:px-14 lg:px-24 py-6 md:py-14 space-y-14">
             <h1 className="text-center text-4xl">{slice?.primary?.title[0]?.text}</h1>
@@ -16,7 +17,12 @@ const StepsSlice = ({slice}) => {
                 }
             </div>
             <div className="py-4 flex items-center justify-center">
-                <a href={slice?.primary?.button_url?.url} className="hover:scale-125 duration-300 px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</a>
+                {
+                    slice?.primary?.button_contact_us ?
+                    <HashLink smooth to="./#contact-us" className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</HashLink>
+                    :
+                    <a href={slice?.primary?.button_url?.url} className="hover:scale-125 duration-300 px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</a>
+                }
             </div>
         </div>
     )

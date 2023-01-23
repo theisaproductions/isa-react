@@ -1,4 +1,5 @@
 import { PrismicRichText } from '@prismicio/react';
+import { HashLink } from 'react-router-hash-link';
 import RichText from '../components/richText';
 
 const OutlineSlice = ({slice}) => {
@@ -16,7 +17,13 @@ const OutlineSlice = ({slice}) => {
                                     <PrismicRichText field={item?.description} />
                                 </RichText>
                                 <div className="py-4">
-                                    <a href={item?.button_link?.url} className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{item?.button_label}</a>
+                                    {
+                                        item?.button_contact_us?
+                                        <HashLink smooth to="./#contact-us" className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{item?.button_label}</HashLink>
+                                        :
+                                        <a href={item?.button_link?.url} className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{item?.button_label}</a>
+                                    }
+                                    
                                 </div>
                             </div>
                             <div className="w-full md:w-1/2 h-40 md:h-auto bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url("${item?.image?.url}")`}}></div>

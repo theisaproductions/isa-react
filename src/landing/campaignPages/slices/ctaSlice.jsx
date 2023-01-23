@@ -1,5 +1,6 @@
 import { PrismicRichText } from '@prismicio/react';
 import RichText from '../components/richText';
+import { HashLink } from 'react-router-hash-link';
 
 const CtaSlice = ({slice}) => {
     return(
@@ -10,7 +11,12 @@ const CtaSlice = ({slice}) => {
                     <PrismicRichText field={slice?.primary?.paragraph} />
                 </RichText>
                 <div className="pt-4">
-                    <a href={slice?.primary?.button_link?.url} className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</a>
+                    {
+                        slice?.primary?.button_contact_us ?
+                        <HashLink smooth to="./#contact-us" className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</HashLink>
+                        :
+                        <a href={slice?.primary?.button_link?.url} className="px-8 py-3 text-white bg-black font-light hover:bg-zinc-800">{slice?.primary?.button_label}</a>
+                    }
                 </div>
             </div>
             <div className="w-full h-72 md:h-auto md:w-1/2 bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url("${slice?.primary?.image?.url}")`}}></div>
