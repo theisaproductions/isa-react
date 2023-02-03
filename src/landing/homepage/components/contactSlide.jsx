@@ -42,7 +42,7 @@ const ContactSlide = ({current, index}) => {
 
     return (
         <div className='bg-white h-screen'>
-                <div className={`h-full w-full px-5vw pt-24 md:pt-28 pb-4 md:pb-10 ${current.current === index  ? 'animate-fadeInText opacity-100' : 'opacity-0'}`}>
+                <div className={`h-full w-full px-5vw pt-28 pb-4 md:pb-10 ${current.current === index  ? 'animate-fadeInText opacity-100' : 'opacity-0'}`}>
                     <div className='h-full w-full flex flex-col gap-10 pr-8 md:pr-10'>
                         <div className='flex flex-col sm:items-center'>
                             <div className='px-8 py-4 text-4xl font-black uppercase border-2 border-black select-none text-center'>Contact Us</div>
@@ -51,19 +51,19 @@ const ContactSlide = ({current, index}) => {
                             <div className='w-full sm:w-1/2 flex flex-col gap-10'>
                                 <a tabIndex={-1} href="/" className='text-lg md:text-2xl max-w-max'>www.isafilmschool.com</a>
                                 <div className="flex items-end gap-4">
-                                    <a tabIndex={-1} target="_blank" href="https://www.facebook.com/theindianschoolofacting/" className='duration-200 hover:opacity-80'>
+                                    <a tabIndex={-1} target="_blank" rel="noreferrer" href="https://www.facebook.com/theindianschoolofacting/" className='duration-200 hover:opacity-80'>
                                         <img className='h-6 md:h-8' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/social/facebook.png`} alt="facebook"/>
                                     </a>
-                                    <a tabIndex={-1} target="_blank" href="https://www.instagram.com/theindianschoolofacting/" className='duration-200 hover:opacity-80'>
+                                    <a tabIndex={-1} target="_blank" rel="noreferrer" href="https://www.instagram.com/theindianschoolofacting/" className='duration-200 hover:opacity-80'>
                                         <img className='h-6 md:h-8' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/social/instagram.png`} alt="instagram"/>
                                     </a>
-                                    <a tabIndex={-1} target="_blank" href="https://twitter.com/ISAFilmschool" className='duration-200 hover:opacity-80'>
+                                    <a tabIndex={-1} target="_blank" rel="noreferrer" href="https://twitter.com/ISAFilmschool" className='duration-200 hover:opacity-80'>
                                         <img className='h-6 md:h-8' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/social/twitter.png`} alt="twitter"/>
                                     </a>
-                                    <a tabIndex={-1} target="_blank" href="https://www.linkedin.com/company/the-indian-school-of-acting/" className='duration-200 hover:opacity-80'>
+                                    <a tabIndex={-1} target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/the-indian-school-of-acting/" className='duration-200 hover:opacity-80'>
                                         <img className='h-6 md:h-8' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/social/linkedin.png`} alt="linkedin"/>
                                     </a>
-                                    <a tabIndex={-1} target="_blank" href="https://www.youtube.com/channel/UCXRE4_lhZmwD_5xPLoTiiYg" className='duration-200 hover:opacity-80'>
+                                    <a tabIndex={-1} target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCXRE4_lhZmwD_5xPLoTiiYg" className='duration-200 hover:opacity-80'>
                                         <img className='h-6 md:h-8' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/social/youtube.png`} alt="youtube"/>
                                     </a>
                                 </div>
@@ -124,7 +124,7 @@ const ContactSlide = ({current, index}) => {
                                         </div>
                                         <div className="text-center mt-6">
                                             <button tabIndex={-1} disabled={submitting} type="submit" className="py-2 px-10 flex items-center justify-center rounded-md border border-black/20 text-lg font-bold text-white bg-black focus:bg-black/70">
-                                                {submitting ? <Spinner size="sm" style='text-white' /> : 'Submit'}
+                                                {submitting ? <Spinner size="sm" style={'text-white'} /> : 'Submit'}
                                             </button>
                                         </div>
                                     </Form>

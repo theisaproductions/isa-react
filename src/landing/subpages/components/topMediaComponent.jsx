@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const TopMediaComponent = ({type, mediaUrl}) => {
 
@@ -32,7 +32,7 @@ const TopMediaComponent = ({type, mediaUrl}) => {
             }
 
             <div className='absolute top-0 left-0 h-full w-full z-10 p-5vw flex flex-col items-center justify-end'>
-                <div onClick={scrollDown} className="cursor-pointer duration-300 hover:scale-150">
+                <div onClick={scrollDown} className="cursor-pointer duration-300 hover:scale-150 mb-16 md:mb-2">
                     <img className='h-12 animate-bounce drop-shadow-dark1' src={`${process.env.PUBLIC_URL}/assets/images/utility/icons/white/scroll_down.png`} alt="scroll_down" />
                 </div>
             </div>

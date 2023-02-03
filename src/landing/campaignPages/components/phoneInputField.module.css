@@ -1,0 +1,22 @@
+.PhoneInput {
+    --PhoneInputCountryFlag-height: 24px;
+    --PhoneInputCountryFlag-borderColor: none;
+    --PhoneInputCountrySelectArrow-opacity: 1;
+    --PhoneInput-color--focus: #000;
+    padding: 8px;
+}
+.PhoneInput select {
+    color: #fff !important;
+    background-color: rgba(0,0,0,1);
+}
+.PhoneInput input {
+    background-color: transparent;
+    outline: none;
+}
+.darkArrow {
+    --PhoneInputCountrySelectArrow-color: #000;
+}
+.lightArrow {
+    --PhoneInputCountrySelectArrow-color: #fff;
+}
+

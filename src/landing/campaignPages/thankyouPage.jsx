@@ -1,11 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import SubpageFooter from '../subpages/components/subpageFooter';
-import Navbar from './navbar';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../components/navbar";
+import SubpageFooter from "../subpages/components/subpageFooter";
+import Lottie from "lottie-react";
+import sentAnimation from '../lottie/sent.json';
 
-const NotFoundPage = () => {
-    return (
-        <div className='min-h-screen'>
+const ThankyouPage = () => {
+
+    const [animationEnded, setAnimationEnded] = useState(false);
+
+    const handleAnimEnd = () => {
+        setAnimationEnded(true);
+    }
+
+    return(
+        <div>
             <Navbar />
 
             {/* top section */}
@@ -34,17 +43,14 @@ const NotFoundPage = () => {
 
             <div className='px-5vw py-14'>
                 <div className='max-w-6xl mx-auto space-y-10'>
-
-                    {/* not found */}
+                    <div className={`flex duration-300 ${animationEnded ? 'h-0 mb-0 opacity-0' : 'h-28 mb-2 opacity-1'}`}>
+                        <Lottie className="h-28" animationData={sentAnimation} loop={false} onComplete={handleAnimEnd} />
+                    </div>
+                </div>
+                <div className='max-w-6xl mx-auto space-y-10'>
                     <div className='space-y-2'>
-                        <h2 className='text-6xl font-bold'>OOPS!</h2>
-                        <p className='text-lg'>The page you are looking for is not found.</p>
-                        <p className='text-lg'>
-                            <span>Go back to </span>
-                            <Link to={'/'} className="font-semibold hover:text-blue-600">Home page</Link>
-                            <span> or </span>
-                            <Link to={'/blogs'} className="font-semibold hover:text-blue-600">Blogs page</Link>
-                        </p>
+                        <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold'>Thankyou for contacting us</h2>
+                        <p className='text-lg'>Your message has been sent successfully. you will hear from us soon.</p>
                     </div>
                     
                     {/* courses */}
@@ -94,4 +100,4 @@ const NotFoundPage = () => {
     )
 }
 
-export default NotFoundPage;
+export default ThankyouPage;

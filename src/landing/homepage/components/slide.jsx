@@ -40,23 +40,23 @@ const Slide = ({data, goToSlide, current, index}) => {
                     }
                     {
                         data.type === 'image' &&
-                        <div className='h-full w-full bg-cover bg-center bg-no-repeat' style={{backgroundImage: `url("${cdnURL}${data.mediaUrl}")`}}></div>
+                        <div className={`h-full w-full bg-cover md:bg-center ${index === 6 ? 'bg-left' : 'bg-center'} bg-no-repeat`} style={{backgroundImage: `url("${cdnURL}${data.mediaUrl}")`}}></div>
                     }
                     <div className='absolute top-0 left-0 h-full w-full z-10 p-5vw'>
-                        <div className='h-full w-full flex flex-col justify-end pb-10 md:pb-0'>
+                        <div className='h-full w-full flex flex-col justify-end pb-24 md:pb-0'>
                             <div className={`text-white ${data.theme==='light' ? 'text-white' : 'text-black'}`}>
                                 <div className='group relative pb-2 max-w-max'>
                                     <h1 className={`uppercase font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl max-w-min drop-shadow-dark1 dalay-500 ${current.current === index  ? 'animate-fadeInText opacity-100' : 'opacity-0'}`}>{data.name}</h1>
                                     <div className={`h-2 absolute bottom-0 left-0 ${data.theme==='light' ? 'bg-white' : 'bg-black'} ${current.current === index  ? 'animate-fadeInText group-hover:opacity-100 duration-500' : 'opacity-0 duration-100'} w-0 group-hover:w-full`}></div>
                                 </div>
-                                <p className={`text-lg md:text-2xl font-thin mt-2 drop-shadow-dark2 ${current.current === index  ? 'animate-fadeInLongText opacity-100' : 'opacity-0'}`}>{data.subHeading}</p>
-                                <Link tabIndex={-1} to={data.navTo} className={`flex gap-4 items-center hover:gap-12 duration-500 mt-4 drop-shadow-dark2 ${current.current === index  ? 'animate-fadeInLong opacity-100' : 'opacity-0'} ${data.theme === 'light' ? 'text-white' : 'text-black'}`}>
+                                <p className={`text-lg md:text-2xl font-thin mt-2 mr-20 drop-shadow-dark1 ${current.current === index  ? 'animate-fadeInLongText opacity-100' : 'opacity-0'}`}>{data.subHeading}</p>
+                                <div className={`flex gap-4 items-center hover:gap-12 duration-500 mt-4 drop-shadow-dark2 ${current.current === index  ? 'animate-fadeInLong opacity-100' : 'opacity-0'} ${data.theme === 'light' ? 'text-white' : 'text-black'}`}>
                                     <span className='uppercase text-lg'>Show</span>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 11C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13V11ZM3 13C2.44771 13 2 12.5523 2 12C2 11.4477 2.44771 11 3 11V13ZM17 13H3V11H17V13Z" fill="currentColor"/>
                                         <path d="M21.7152 11.7966L16.265 7.90356C15.7355 7.52535 15 7.90385 15 8.55455V15.4454C15 16.0961 15.7355 16.4746 16.265 16.0964L21.7152 12.2034C21.8548 12.1037 21.8548 11.8963 21.7152 11.7966Z" fill="currentColor"/>
                                     </svg>
-                                </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
