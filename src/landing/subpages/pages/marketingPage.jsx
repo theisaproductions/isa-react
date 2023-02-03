@@ -48,7 +48,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/1.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/1.jpg`} alt="Digital Marketing Training Program | Indian School Of Acting"/>
                     <h2 className='heading2'>Digital Marketing Training Program</h2>
                     <p className="paragraph font-bold">Classroom Training - 3 Months <br/> Online Classes - 4 or 7 months</p>
                     <p className="paragraph">
@@ -65,7 +65,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/2.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/2.jpg`} alt="Fundamentals of Marketing | Indian School Of Acting"/>
                     <h2 className='heading2'>Fundamentals of Marketing</h2>
                     <p className="paragraph">
                         This course will give you an overview of the fundamentals of marketing including Search
@@ -75,7 +75,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/3.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/3.jpg`} alt="Demystifying Digital Channels | Indian School Of Acting"/>
                     <h2 className='heading2'>Demystifying Digital Channels</h2>
                     <p className="paragraph">
                         This course will make you an expert on digital channels and how to target the right audience. You will learn about
@@ -86,7 +86,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/4.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/4.jpg`} alt="Conversion and Strategy | Indian School Of Acting"/>
                     <h2 className='heading2'>Conversion and Strategy</h2>
                     <p className="paragraph">
                         This digital marketing course on conversion and strategy covers the basics of website
@@ -96,7 +96,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/5.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/5.jpg`} alt="Advanced Web Analytics | Indian School Of Acting"/>
                     <h2 className='heading2'>Advanced Web Analytics</h2>
                     <p className="paragraph">
                         This Advanced Web Analytics certification training course helps you master the critical elements of social media
@@ -107,7 +107,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/6.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/6.jpg`} alt="Advanced Search Engine Optimization | Indian School Of Acting"/>
                     <h2 className='heading2'>Advanced Search Engine Optimization (SEO)</h2>
                     <p className="paragraph">
                         The Advanced Search Engine Optimization (SEO) course is designed to transform you into an industry-ready
@@ -119,7 +119,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/7.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/7.jpg`} alt="Advanced Pay Per Click Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Advanced Pay Per Click (PPC) Certification Program</h2>
                     <p className="paragraph">
                         The Advanced PPC Course is designed to transform you into an industry-ready paid marketing professional.
@@ -131,7 +131,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/8.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/8.jpg`} alt="Advanced Social Media Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Advanced Social Media</h2>
                     <p className="paragraph">
                         The Advanced Social Media Course will transform you into an industry-ready social media marketer. It combines
@@ -146,7 +146,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/9.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/9.jpg`} alt="Social Media Marketing Certification | Indian School Of Acting"/>
                     <h2 className='heading2'>Social Media Marketing Certification</h2>
                     <p className='paragraph font-semibold'>Flexible Online Learning (30 Hrs)</p>
                     <p className="paragraph">
@@ -158,7 +158,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/10.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/10.jpg`} alt="Search Marketing Professional | Indian School Of Acting"/>
                     <h2 className='heading2'>Search Marketing Professional: Certificate Course</h2>
                     <p className='paragraph font-semibold'>Flexible Online Learning (30 Hrs)</p>
                     <p className="paragraph">
@@ -170,7 +170,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/11.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/11.jpg`} alt="Digital Marketing Specialist | Indian School Of Acting"/>
                     <h2 className='heading2'>Digital Marketing Specialist: Certification Course</h2>
                     <p className='paragraph font-semibold'>Flexible Online Learning (30 Hrs)</p>
                     <p className="paragraph">
@@ -182,7 +182,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/12.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/12.jpg`} alt="Digital and Social Selling Specialist | Indian School Of Acting"/>
                     <h2 className='heading2'>Digital and Social Selling Specialist: Certification Courses</h2>
                     <p className='paragraph font-semibold'>Flexible Online Learning (30 Hrs)</p>
                     <p className="paragraph">
@@ -196,7 +196,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/13.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/13.jpg`} alt="Training For Corporates | Indian School Of Acting"/>
                     <h2 className='heading2'>For Corporates</h2>
                     <p className="paragraph">
                         We manoeuvre enterprise training and workshops in a manner that makes it possible for trainees to jump-start
@@ -209,7 +209,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/14.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/14.jpg`} alt="Digital Marketing For Students | Indian School Of Acting"/>
                     <h2 className='heading2'>For Colleges, Schools and Institutes</h2>
                     <p className="paragraph">
                         Curriculum for different educational organizations developed by Digital Marketing Thought Leaders with over 15
@@ -221,7 +221,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/15.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/15.jpg`} alt="Branding, Marketing, Designing For Brands | Indian School Of Acting"/>
                     <h2 className='heading2'>Branding, Marketing, Designing: Hire our Professionals and work with us</h2>
                     <p className="paragraph">
                         We help in realizing brand aspirations through our in-depth research & analytics and translate them into
@@ -236,7 +236,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/16.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/16.jpg`} alt="Web Designing | Indian School Of Acting"/>
                     <h2 className='heading2'>Branding, Marketing, Designing: Hire our Professionals and work with us</h2>
                     <p className="paragraph">
                         Whether you want to design and create a website for the first time or you’ve been designing websites for years,
@@ -251,7 +251,7 @@ const MarketingPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/17.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/marketing/17.jpg`} alt="Website Development | Indian School Of Acting"/>
                     <h2 className='heading2'>Get Your Website Made by us</h2>
                     <p className="paragraph">
                         ISA is providing the specialized services to various industries across several physiographiques including

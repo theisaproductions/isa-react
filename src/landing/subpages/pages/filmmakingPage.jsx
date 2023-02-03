@@ -20,6 +20,12 @@ const FilmmakingPage = () => {
                     <h1 className="heading1">ISA Film School</h1>
                     <h2 className="subheading">There is no higher form of artistic expression than film.</h2>
                     <p className='paragraph'>
+                    Creating films is an art form used to communicate stories, ideas, and emotions utilizing the audio-visual medium with the intent of making an impact on the audience. As a highly creative and liberating profession, filmmaking entails a wide range of facets ranging from storytelling, directing, scripting, and cinematography to form a cohesive whole.</p>
+                    <p className='paragraph'>
+
+ISA Film Making course offers students the essential knowledge and abilities needed to thrive in the dynamic film industry.</p>
+
+                    <p className='paragraph'>
                         Immerse yourself in a curriculum that integrates technical knowledge with artistic exploration and creativity
                         taught by industry-experienced professionals.
                     </p>
@@ -27,7 +33,9 @@ const FilmmakingPage = () => {
 
                 {/* just text*/}
                 <div className='flex flex-col md:flex-row gap-6'>
-                    <h1 className="heading1">Overview</h1>
+                    <h2 className="heading2">Overview of Film Making</h2>
+                    <p className='paragraph'>
+                    Film-making is the art of creating an engaging and captivating visual narrative. It begins with selecting a compelling story, followed by shooting, directing, scripting, editing, and ultimately presenting it to an audience. The ultimate goal of film making is to capture the viewers' attention and create a lasting impact.</p>
                     <p className='paragraph'>
                         It all starts with imagination, ideas and the script. Creative producers and screenwriters learn to analyze
                         and write screenplays by understanding character, structure and narrative story elements. From pre-production,
@@ -39,10 +47,33 @@ const FilmmakingPage = () => {
 
                 {/* quote */}
                 <h2 className='quote text-center'>“We don’t want to tell you how to do your job, but somebody has to.”</h2>
+
+                 {/* just text*/}
+                 <div className='flex flex-col md:flex-row gap-6'>
+                    <h2 className="heading2">Why Choose ISA for Film Making Courses in Delhi?</h2>
+                    <p className='paragraph'>
+                    Some of the reasons students select our institute for filmmaking courses are:
+                    <li>Courses designed by experienced and expert Industry professionals.</li>
+ <li>We encourage students to express their artistic insight to develop and learn.</li>
+                    </p>
+                    <p className='paragraph'>
+<li>We train students practically so that they become industry employed.</li>
+<li>We help students connect history with the latest developments in filmmaking, thus crafting their career path to grow.</li>
+<li>Well-designed comprehensive courses to equip students with basics and advanced aspects of filmmaking.</li></p></div>
+
                 
                 {/* heading */}
-                <h1 className='heading1'>Courses</h1>
-                
+                <div className='text-center flex flex-col gap-6'>
+                <h2 className='heading2'>Courses in Filmmaking</h2>
+                <p className='paragraph'>
+                The Indian film industry offers many opportunities to individuals with creative flair and innovative minds. Attending a filmmaking school can be attractive for many, yet some may see it as an unprofitable expenditure. Although there is a wide selection of possibilities, this type of education can be highly beneficial. It provides the groundwork for successful professional outcomes and develops one's expressive capabilities.
+               </p>
+               <p className='paragraph'>
+                 Gaining confidence in a classroom setting and creating a movie are vastly different undertakings. As such, the only way to acquire the necessary skills for making a film is through practical, on-the-job experience, which is exactly how we instruct our students. Students here take what they've learned in the classroom and implement it.
+               </p>
+               <p className='paragraph'>
+                Our comprehensive film-making courses help develop your passion for films into a valuable skill set for a successful career.</p>
+                </div>
                 {/* two image and two text */}
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-2 gap-1 md:gap-4'>
@@ -529,7 +560,8 @@ const FilmmakingPage = () => {
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/filmmaking/47.jpg`} alt=""/>
-                    <h2 className='heading2'>Workshop for Schools, Colleges and Institutes</h2>
+                    <h2 className='heading2'>What our Students say</h2>
+                    <h3 className='subheading'>Workshop for Schools, Colleges and Institutes</h3>
                     <p className="paragraph">
                         ISA’s special filmmaking programs offers amazing film activities and events for both students and teachers,
                         providing specialist training and access to industry professionals and guest artists. From filmmaking workshops
@@ -541,7 +573,7 @@ const FilmmakingPage = () => {
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/filmmaking/48.jpg`} alt=""/>
-                    <h2 className='heading2'>Corporate Filmmaking Workshops</h2>
+                    <h3 className='subheading'>Corporate Filmmaking Workshops</h3>
                     <p className="paragraph">
                         At the heart of our corporate workshops we aim at providing staff members with a rewarding, team building
                         experience. Participants will work closely to develop creative ideas, they will rely on one another to pitch and
@@ -554,7 +586,7 @@ const FilmmakingPage = () => {
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/filmmaking/49.jpg`} alt=""/>
-                    <h2 className='heading2'>Events</h2>
+                    <h3 className='subheading'>Events</h3>
                     <p className="paragraph">
                         ISA organizes the best filmmaking and film festival events in India. Get ready to explore filmmaking,
                         festivals and much more. Networking events, workshops, documentaries, fundings, film booths - the
@@ -565,7 +597,7 @@ const FilmmakingPage = () => {
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
                     <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/filmmaking/50.jpg`} alt=""/>
-                    <h2 className='heading2'>Accommodation Facilities</h2>
+                    <h3 className='subheading'>Accommodation Facilities</h3>
                     <p className="paragraph">
                         The best film school of India, ISA Film School is located in Vaishali, Ghaziabad which is part of the
                         National Capital Region, Delhi - NCR. Vaishali is very well connected to the Delhi Metro. Vaishali has an
@@ -574,7 +606,7 @@ const FilmmakingPage = () => {
                         proximity of
                         Delhi. ISA Film School is located at a walkable distance of less than 2km from the Vaishali metro station.
                     </p>
-                    <h2 className='heading2'>Student Housing Options</h2>
+                    <h3 className='subheading'>Student Housing Options</h3>
                     <p className="paragraph">
                         Outstation students can choose between various accommodation preferences including Paying Guest, Hotels,
                         Service Apartments and Rentals facilities. Expenses for accommodation in NCR starts from Rs 4,000 per month
@@ -623,6 +655,9 @@ const FilmmakingPage = () => {
                     </p>
                     <p className='paragraph terms'>The admissions for all courses are subject to seat availability.</p>
                 </div>
+                <div className='flex flex-col gap-6'>
+                <h2 className='heading2'>Are you Looking for a Practical Film Making Institute in Delhi?</h2>
+                <p className="paragraph">Gaining filmmaking knowledge can significantly advance an aspiring artist's skill set. Creativity plays an essential role in this art, yet education can provide an invaluable advantage. ISA offers an opportunity for students to gain practical experience in all facets of the filmmaking profession. To receive further information regarding our services, please get in touch with us.</p></div>
 
 
 

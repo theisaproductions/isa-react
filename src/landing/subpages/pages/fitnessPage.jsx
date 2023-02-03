@@ -42,7 +42,7 @@ const FitnessPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/1.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/1.jpg`} alt="Zumba Workout Plan | Indian School Of Acting"/>
                     <h2 className='heading2'>ISA Zumba</h2>
                     <p className='paragraph font-semibold'>
                         For all age groups <br/> Packages: Quarterly, Half yearly, Yearly
@@ -59,8 +59,8 @@ const FitnessPage = () => {
                 {/* two image with text */}
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-2 gap-1 md:gap-4'>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/2.jpg`} alt=""/>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/3.jpg`} alt=""/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/2.jpg`} alt="Yoga Certification Programs | Indian School Of Acting"/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/3.jpg`} alt="Yoga Studio Classes | Indian School Of Acting"/>
                     </div>
                     <h2 className='heading2'>ISA Yoga</h2>
                     <h3 className='paragraph font-semibold'>
@@ -75,7 +75,7 @@ const FitnessPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/4.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/4.jpg`} alt="Martial Arts program | Indian School Of Acting"/>
                     <h2 className='heading2'>ISA Martial Arts</h2>
                     <p className='paragraph font-semibold'>
                         All forms of Martial Arts <br/> Kids and Adults batches
@@ -94,8 +94,8 @@ const FitnessPage = () => {
                 {/* two image with text */}
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-2 gap-1 md:gap-4'>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/5.jpg`} alt=""/>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/6.jpg`} alt=""/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/5.jpg`} alt="Self-Defense Programs For Kids | Indian School Of Acting"/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/fitness/6.jpg`} alt="Defense Programs Certification | Indian School Of Acting"/>
                     </div>
                     <h2 className='heading2'>Self-Defence Classes For Kids Judo, Karate and Jiu Jitsu</h2>
                     <h3 className='paragraph font-semibold'>

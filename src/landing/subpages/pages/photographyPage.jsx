@@ -53,7 +53,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/1.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/1.jpg`} alt="Diploma In Professional Photography | Indian School Of Acting"/>
                     <h2 className='heading2'>Diploma In Professional Photography</h2>
                     <p className='paragraph font-semibold'>
                         Terms: 3, 6, 9 and 12 months <br/>
@@ -103,7 +103,7 @@ const PhotographyPage = () => {
                         </p>
                     </div>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/2.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/2.jpg`} alt="Foundations Of Photography | Indian School Of Acting"/>
                     </div>
                 </div>
 
@@ -111,8 +111,8 @@ const PhotographyPage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/3.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/4.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/3.jpg`} alt="Studio Lighting Photography | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/4.jpg`} alt="Lightroom Essential Training | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -140,8 +140,8 @@ const PhotographyPage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/5.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/6.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/5.jpg`} alt="PJ and Street Photography | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/6.jpg`} alt="Portrait Photography | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -170,8 +170,8 @@ const PhotographyPage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/7.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/8.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/7.jpg`} alt="Product Photography | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/8.jpg`} alt="Career Coaching | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -197,7 +197,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/9.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/9.jpg`} alt="Advance Diploma Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Advance Diploma Course</h2>
                     <p className="paragraph font-semibold">
                         Duration: 4 months <br/>
@@ -222,7 +222,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/10.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/10.jpg`} alt="Professional Photography: Flexible Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Professional Photography: Flexible Course</h2>
                     <p className="paragraph font-semibold">
                         Part Time, Study at own pace <br/>
@@ -240,7 +240,7 @@ const PhotographyPage = () => {
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/11.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/11.jpg`} alt="Pro Photography Certificate | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">Pro Photography Certificate</h3>
@@ -276,13 +276,13 @@ const PhotographyPage = () => {
                         </p>
                     </div>
                     <div className='w-full md:w-1/2'>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/12.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/12.jpg`} alt="Creative Photography Certificate | Indian School Of Acting"/>
                     </div>
                 </div>
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/13.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/13.jpg`} alt="Beginners Photography Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Beginners Photography Course</h2>
                     <p className="paragraph font-semibold">
                         Duration: 1 Month <br/>
@@ -303,7 +303,7 @@ const PhotographyPage = () => {
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/14.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/14.jpg`} alt="5 days Photography Workshop | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">5 days Photography Workshop</h3>
@@ -324,8 +324,8 @@ const PhotographyPage = () => {
                 {/* two image with text */}
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-2 gap-1 md:gap-4'>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/15.jpg`} alt=""/>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/16.jpg`} alt=""/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/15.jpg`} alt="Diploma in Travel Photography | Indian School Of Acting"/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/16.jpg`} alt="Diploma in Nature Photography | Indian School Of Acting"/>
                     </div>
                     <h2 className='heading2'>Diploma in Travel & Nature Photography</h2>
                     <p className='paragraph font-semibold'>
@@ -341,7 +341,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/17.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/17.jpg`} alt="4 Week Online Photography Course | Indian School Of Acting"/>
                     <h2 className='heading2'>Wedding and Pre Wedding Photography</h2>
                     <p className="paragraph font-semibold">
                         Wedding Photography Workshop
@@ -360,7 +360,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/18.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/18.jpg`} alt="4 Week Online Photography Course | Indian School Of Acting"/>
                     <h2 className='heading2'>4 Week Online Photography Course</h2>
                     <p className="paragraph font-semibold">
                         1 hour per class
@@ -376,7 +376,7 @@ const PhotographyPage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/19.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/19.jpg`} alt="Hire Photographers | Indian School Of Acting"/>
                     <h2 className='heading2'>Hire Photographers</h2>
                     <p className="paragraph font-semibold">
                         For Weddings, Pre Weddings & other Events
@@ -405,7 +405,7 @@ const PhotographyPage = () => {
 
                 {/* image with row of items */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/20.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/20.jpg`} alt="Editing Courses | Indian School Of Acting"/>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="flex flex-col gap-4 border-t-8 border-gray-300 pt-4">
                             <h2 className="heading2">Photoshop</h2>
@@ -432,8 +432,8 @@ const PhotographyPage = () => {
                 <div className='flex flex-col gap-6'>
                     <h2 className='heading1'>World of fashion</h2>
                     <div className='grid grid-cols-2 gap-1 md:gap-4'>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/21.jpg`} alt=""/>
-                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/22.jpg`} alt=""/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/21.jpg`} alt="ISA School of Fashion | Indian School Of Acting"/>
+                        <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/22.jpg`} alt="Advance Diploma Course In Fashion | Indian School Of Acting"/>
                     </div>
                     <h2 className='heading2'>ISA School of Fashion</h2>
                     <p className='paragraph font-semibold'>
@@ -463,14 +463,14 @@ const PhotographyPage = () => {
 
                 {/* one image with quote */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/23.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/23.jpg`} alt="Short certificate courses In Fashion | Indian School Of Acting"/>
                     <h2 className='quote'>“Style is a way to say who you are without having to speak"</h2>
                 </div>
 
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/24.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/24.jpg`} alt="ISA Modelling Course | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">ISA Modelling Course</h3>
@@ -509,14 +509,14 @@ const PhotographyPage = () => {
                         </p>
                     </div>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/25.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/25.jpg`} alt="ISA Kids Modelling | Indian School Of Acting"/>
                     </div>
                 </div>
 
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/26.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/26.jpg`} alt="ISA Portfolio Making | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">ISA Portfolio Making</h3>
@@ -556,13 +556,13 @@ const PhotographyPage = () => {
                         </p>
                     </div>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/27.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/27.jpg`} alt="ISA Celebrity Shoots | Indian School Of Acting"/>
                     </div>
                 </div>
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/28.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/photography/28.jpg`} alt="Fashion Shows | Indian School Of Acting"/>
                     <h2 className='heading2'>Fashions Shows | Fashion Weeks | Beauty Pageants | Products Launch | Kids Pageants</h2>
                     <p className='paragraph'>
                         In the world of event management fashion event planning is often seen as very glamorous and cutting edge. In reality
