@@ -9,6 +9,7 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 import Spinner from '../../components/spinner';
 import PhoneInputField from './phoneInputField';
 import { getLocation } from '../../services/locationService';
+import { useNavigate } from 'react-router-dom';
 
 // captures location info from ip and updates the form value.
 const HiddenData = () => {
@@ -26,6 +27,7 @@ const HiddenData = () => {
 const ContactFormComponent = ({darkMode}) => {
 
     const api = "https://submit-form.com/OHNK4wOs";
+    const navigate = useNavigate();
     
     const [submitting, setSubmitting] = useState(false);
 
@@ -61,8 +63,7 @@ const ContactFormComponent = ({darkMode}) => {
         axios.post(api, value).then(res => {
             setSubmitting(false);
             reset();
-            toast.success('Message Sent');
-            window.dataLayer.push({'event': 'contact-form-submitted'})
+            navigate('/promo/success');
         }).catch(error => {
             setSubmitting(false);
             toast.error('Some error occurred!');

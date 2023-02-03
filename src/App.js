@@ -32,8 +32,10 @@ const ActingApplication = lazy(() => import('./landing/subpages/pages/applyPage/
 const AnimationApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/animationApplicationPage'));
 const FilmmakingApplication = lazy(() => import('./landing/subpages/pages/applyPage/pages/filmmakingApplicationPage'));
 
+
 // campaign pages
 const CampaignPage = lazy(() => import('./landing/campaignPages/campaignPage'));
+const ThankyouPage = lazy(() => import('./landing/campaignPages/thankyouPage.jsx'));
 
 // preview
 const PreviewComponent = lazy(() => import('./landing/preview'));
@@ -90,6 +92,7 @@ function App() {
               </Route>
             </Route>
             <Route path="promo/:id" element={<CampaignPage />}></Route>
+            <Route path="promo/success" element={<ThankyouPage />}/>
             <Route path="preview" element={<PreviewComponent />}></Route>
         </Routes>
       </Wrapper>
