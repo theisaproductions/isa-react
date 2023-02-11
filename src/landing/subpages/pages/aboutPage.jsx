@@ -17,17 +17,36 @@ const AboutPage = () => {
                     <img className='w-1/4' src={`${process.env.PUBLIC_URL}/assets/images/logo/black_w_tag.png`} alt="logo"/>
 
                     <div className='flex flex-col items-center justify-center text-center gap-4'>
-                        <h1 className='text-2xl md:text-4xl font-bold'>Who we are?</h1>
+                        <h1 className='text-2xl md:text-4xl font-bold'>Professional Acting School</h1>
+                        <p className='text-sm md:text-lg'>The Indian School of Acting has a long-standing reputation as one of the most reputable acting institutes in India. Our courses are designed to be productive and rewarding, and our teaching techniques are advanced and professional. We are dedicated to providing our students with the best possible education in the field of entertainment. We always maintain the highest standards of quality, and believe that being one of the top acting institutes in Delhi means more than just focusing on acting skills. We also help develop our students' overall personalities.</p>
+                        <p className='text-sm md:text-lg'>The school has built an excellent reputation over the years, offering a wide range of courses that cover all aspects of acting, from stage to screen. It is considered the most preferred acting school for aspiring actors in India. Whether you want to be a stage actor or a film actor, the school has the perfect course for you.</p>
+                    </div>
+
+                    <div className='flex flex-col items-center justify-center text-center gap-4'>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Who we are?</h2>
                         <p className='text-sm md:text-lg'>We're mentors, trainers, visionaries, directors, artists and some call us a blessing in disguise.</p>
                     </div>
 
                     <div className='flex flex-col items-center justify-center text-center gap-4'>
-                        <h1 className='text-2xl md:text-4xl font-bold'>What we do?</h1>
+                        <h2 className='text-2xl md:text-4xl font-bold'>What we do?</h2>
                         <p className='text-sm md:text-lg'>We train potential actors and artists with passion and creativity to make them the best artists out there. Also, we create and curate content and films, amidst all the artistic parties.</p>
                     </div>
 
+                    <div className='flex flex-col items-center justify-center text-center gap-4'>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Our Vision</h2>
+                        <p className='text-sm md:text-lg'>Our goal is to become a renowned acting institute in India that promotes art, theater ,and entertainment through industry interface and experienced professionals
+</p>
+                    </div>
+
+                    <div className='flex flex-col items-center justify-center text-center gap-4'>
+                        <h2 className='text-2xl md:text-4xl font-bold'>Our Mission</h2>
+                        <p className='text-sm md:text-lg'>To create professionals in art, print, television and film by imbibing the experience of Industry professionals  and updated acting curriculum.
+</p>
+                    </div>
+
+
                     <div className='flex flex-col items-center justify-center text-center gap-6 md:gap-10'>
-                        <h1 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4'>What’s for you?</h1>
+                        <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4'>What’s for you?</h2>
                         <div className='flex flex-col gap-2 text-center'>
                             <h2 className='text-xl md:text-2xl font-bold'>ISA Film School</h2>
                             <p className='text-sm md:text-lg'>Film is a battleground and we make warriors.</p>
@@ -305,6 +324,17 @@ const AboutPage = () => {
                     </p>
                 </div>
 
+                <div className='flex flex-col items-center gap-6 text-center'>
+                    <h2 className='text-xl md:text-2xl font-bold'>Why Indian School of Acting?</h2>
+                    <p className='text-sm md:text-base w-full md:w-2/3'>
+                    Indian School of Acting promotes aspiring artists from diverse backgrounds and has become the sought-after school for actors.
+Best environment for becoming trained actors
+Curriculum designed by experienced professionals
+Practical exposure and live interaction with experienced professionals in the entertainment industry.</p>
+
+    
+                </div>
+
                 {/* 1 image and text in col */}
                 <div className='flex flex-col gap-6 md:gap-10'>
                     <h1 className='text-4xl md:text-5xl font-bold'>ISA Talent Management</h1>
@@ -351,6 +381,12 @@ const AboutPage = () => {
                         India, we create web content, short films, fashion films and digital commercials. A part of our team is also
                         always busy filming and putting together behind the scenes documentation for feature films. Another part
                         is busy training the best artists of the country.
+                    </p>
+                </div>
+                <div className='flex flex-col gap-6'>
+                    <h2 className='text-4xl md:text-5xl font-bold'>Ready to become a professional artist?</h2>
+                    <p className='text-sm md:text-lg'>
+                    Indian School of Acting has been providing training to aspiring artists from all over India for several years. The institute has become recognized for its methodology in producing great professionals. To know more about our training, give us a call or visit our campus.
                     </p>
                 </div>
 

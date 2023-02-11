@@ -23,6 +23,8 @@ const ActingPage = () => {
                         <h1 className='heading1'>The Indian School of Acting</h1>
                         <h2 className='subheading'>The Best Acting School in India</h2>
                         <p className='paragraph'>
+                        The Indian School of Acting is quickly becoming the best acting school in India. ISA is located in Vaishali, Ghaziabad, and has won awards for being the best acting school in Delhi NCR. We train students in camera acting and theater to prepare for films, TV, plays, and productions. Our faculty members are some of the best in the country, come from prestigious institutes like FTII, NSD, and LAMDA in London, or are eminent personalities from the film and theater industry.</p>
+                        <p className='paragraph'>
                             An exciting and immersive pathway into
                             your professional career as an actor for
                             film, theatre and television in India and
@@ -36,7 +38,7 @@ const ActingPage = () => {
 
                 {/* just text */}
                 <div className='flex flex-col md:flex-row gap-10'>
-                    <h2 className='heading2'>Overview</h2>
+                    <h2 className='heading2'>The Best Acting School in India</h2>
                     <p className='paragraph'>
                         The acting skills taught at The Indian School of Acting, involve unique and dynamic processes of learning that
                         will equip you with a robust and logical pathway to produce the most amazing performances. This acting
@@ -54,6 +56,17 @@ const ActingPage = () => {
                         is determined to produce highly skilled actors and presenters who are well prepared for the demands of the
                         entertainment industry. Which is another reason why, The Indian School of Acting is the best acting school in
                         Delhi - NCR. We prepare students for Bollywood, Hollywood and other film industries across the globe.
+                    </p>
+                </div>
+                <div className='flex flex-col md:flex-row gap-10'>
+                    <h2 className='heading2'>Our Training Technique</h2>
+                    <p className='paragraph'>
+                    Our training technique includes all aspects of acting, plays and theater: realistic acting, natural acting for cameras and films, instant acting for cracking any auditions, and method acting for building any character.
+
+Our acting classes are unique compared to other theater and camera acting institutes because we train students in camera acting and provide theater training to help them build the right network to work in the industry.
+
+Our modules are customized according to what students need to learn the best. We focus on individual students.
+
                     </p>
                 </div>
 
@@ -435,6 +448,13 @@ const ActingPage = () => {
                         current students come from New Zealand, Kenya and different states of India. We don’t seek a prior
                         experience or academic qualification. There is no age bar to apply.
                         However the selections and admissions are strictly on the basis of applications followed by an interview.
+                    </p>
+                </div>
+                <div className='flex flex-col gap-6'>
+                  
+                    <h2 className='heading2'>Why Choose us?</h2>
+                    <p className='paragraph'>
+                    We offer affordable and industry-leading acting courses so that students can learn the skills and techniques of acting and how to groom their personalities to best succeed in the industry. Our training provides students with the skills and experience they need to succeed in the industry and become the best actors in the county.
                     </p>
                 </div>
 
