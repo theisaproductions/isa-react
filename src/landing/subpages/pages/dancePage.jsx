@@ -57,8 +57,8 @@ const DancePage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/1.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/2.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/1.jpg`} alt="Bollywood Dance | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/2.jpg`} alt="Hip Hop | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -83,8 +83,8 @@ const DancePage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/3.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/4.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/3.jpg`} alt="Contemporary | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/4.jpg`} alt="Jazz | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -107,7 +107,7 @@ const DancePage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/5.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/5.jpg`} alt="ISA Zumba | Indian School Of Acting"/>
                     <h2 className='heading2'>ISA Zumba</h2>
                     <p className='paragraph font-semibold'>
                         For all age groups <br/>
@@ -127,8 +127,8 @@ const DancePage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/6.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/7.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/6.jpg`} alt="Ballet | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/7.jpg`} alt="Belly Dance | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -157,8 +157,8 @@ const DancePage = () => {
                 <div className='flex flex-col gap-6'>
                     <div className='grid grid-cols-1 gap-1 md:gap-4'>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/8.jpg`} alt=""/>
-                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/9.jpg`} alt=""/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/8.jpg`} alt="Salsa | Indian School Of Acting"/>
+                            <img className='w-full h-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/9.jpg`} alt="Popping, Locking, Break | Indian School Of Acting"/>
                         </div>
                         <div className='grid grid-cols-2 gap-2 md:gap-6'>
                             <div className='flex flex-col gap-6'>
@@ -221,7 +221,7 @@ const DancePage = () => {
 
                 {/* image with row of items */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/10.jpg`} alt="classical dance"/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/10.jpg`} alt="ISA Classical Dances | Indian School Of Acting"/>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="flex flex-col gap-4 border-t-8 border-gray-300 pt-4">
                             <h2 className="subheading">KATHAK</h2>
@@ -238,7 +238,7 @@ const DancePage = () => {
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/11.jpg`} alt="girl dancing"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/11.jpg`} alt="ISA Dance for Kids | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">ISA Dance for Kids</h3>
@@ -258,7 +258,7 @@ const DancePage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/12.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/12.jpg`} alt="Weddings and Events Choreography | Indian School Of Acting"/>
                     <h2 className='heading2'>Weddings and Events Choreography</h2>
                     <p className="paragraph">
                         ISA Wedding and Events Choreography will turn the biggest amateurs into confident dancers
@@ -284,14 +284,14 @@ const DancePage = () => {
                         </p>
                     </div>
                     <div className='order-first md:order-last'>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/13.jpg`} alt="girl smiling"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/13.jpg`} alt="Corporate Workshops | Indian School Of Acting"/>
                     </div>
                 </div>
 
                 {/* image left text right */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10'>
                     <div>
-                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/14.jpg`} alt="girl dancing"/>
+                        <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/14.jpg`} alt="Personal at Home Classes | Indian School Of Acting"/>
                     </div>
                     <div className='flex flex-col gap-6 md:gap-10'>
                         <h3 className="heading2">Personal at Home Classes</h3>
@@ -311,7 +311,7 @@ const DancePage = () => {
 
                 {/* one image with text */}
                 <div className='flex flex-col gap-6'>
-                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/15.jpg`} alt=""/>
+                    <img className='w-full' src={`${process.env.PUBLIC_URL}/assets/images/subpagepics/dance/15.jpg`} alt=" For Schools, Colleges and Institutes | Indian School Of Acting"/>
                     <h2 className='heading2'>For Schools, Colleges and Institutes</h2>
                     <p className="paragraph">
                         We love to connect people of all ages with dance. With young people in mind, we have created some highly
